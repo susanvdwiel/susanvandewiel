@@ -79,6 +79,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Detail:** https://nl.tommy.com/curve-biologisch-katoenen-hoodie-met-logo-ww0ww29732pkh
 
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+
 **Screenshot(s) van de eerste pagina (small screen):**
 <img scr="images/Main_1.png" width="375px">
 <img scr="images/Main_2.png" width="375px">
