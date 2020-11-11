@@ -80,11 +80,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 **Detail:** https://nl.tommy.com/curve-biologisch-katoenen-hoodie-met-logo-ww0ww29732pkh
 
 **Screenshot(s) van de eerste pagina (small screen):**
-<img src="images/main1.PNG" width="400px" alt="Hoofdpagina">
-<img src="images/main2.PNG" width="400px" alt="Hoofdpagina">
+<img src="images/main1.PNG" width="375px" alt="Hoofdpagina">
+<img src="images/main2.PNG" width="375px" alt="Hoofdpagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
-<img src="images/detail1.PNG" width="400px" alt="Detailpagina">
-<img src="images/detail2.PNG" width="400px" alt="Detailpagina">
-<img src="images/detail3.PNG" width="400px" alt="Detailpagina">
+<img src="images/detail1.PNG" width="375px" alt="Detailpagina">
+<img src="images/detail2.PNG" width="375px" alt="Detailpagina">
+<img src="images/detail3.PNG" width="375px" alt="Detailpagina">
 
