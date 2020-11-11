@@ -61,9 +61,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Breakdownschets (week 1)
-
--uitwerken voor de 1e werkgroep - eind van de eerste week-
 <img src="images/breakdown_schets.png" width="375px" alt="breakdownschets">
+Dit is mijn gemaakte breakdownschets van de main pagina, dus de pagina waar je als eerste opkomt wanneer je op 'dames' hebt geklikt. Dit is de hoofdpagina van de dames kleding van Tommy Hilfiger.
 
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
