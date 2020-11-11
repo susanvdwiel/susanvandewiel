@@ -68,15 +68,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** Rood
+**Je startniveau:** Mijn startniveau is rood
 
-**Je focus:** Surface plane
+**Je focus:** Ik wil mij graag meer focussen op surface plane
 
-**Je opdracht:** Site Hilfiger
+**Je opdracht:** Mijn opdracht is de site van Tommy Hilfiger
 
-**Main:** https://nl.tommy.com/dames
+**Main:** Als main pagina kies ik de hoofdpagina van de dames kleding: https://nl.tommy.com/dames
 
-**Detail:** https://nl.tommy.com/curve-biologisch-katoenen-hoodie-met-logo-ww0ww29732pkh
+**Detail:** Als detail pagina kies is de detailpagina van een hoodie voor dames: https://nl.tommy.com/curve-biologisch-katoenen-hoodie-met-logo-ww0ww29732pkh
 
 **Screenshot(s) van de eerste pagina (small screen):**
 <img src="images/main1.PNG" width="375px" alt="Hoofdpagina">
