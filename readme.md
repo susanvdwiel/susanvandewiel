@@ -65,16 +65,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 Dit is mijn gemaakte breakdownschets van de main pagina, dus de pagina waar je als eerste opkomt wanneer je op 'dames' hebt geklikt. Dit is de hoofdpagina van de dames kleding van Tommy Hilfiger.
 
 ## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
-
 **Je startniveau:** Mijn startniveau is rood
-
 **Je focus:** Ik wil mij graag meer focussen op surface plane
-
 **Je opdracht:** Mijn opdracht is de site van Tommy Hilfiger
-
 **Main:** Als main pagina kies ik de hoofdpagina van de dames kleding: https://nl.tommy.com/dames
-
 **Detail:** Als detail pagina kies is de detailpagina van een hoodie voor dames: https://nl.tommy.com/curve-biologisch-katoenen-hoodie-met-logo-ww0ww29732pkh
 
 **Screenshot(s) van de eerste pagina (small screen):**
