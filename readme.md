@@ -82,7 +82,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 
 **Screenshot(s) van de eerste pagina (small screen):**
-<img scr="images/Main_1.png" width="375px">
+<img scr="images/Main_1.png">
 <img scr="images/Main_2.png" width="375px">
 
 **Screenshot(s) van de tweede pagina (small screen):**
