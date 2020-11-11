@@ -66,17 +66,26 @@ Dit is mijn gemaakte breakdownschets van de main pagina, dus de pagina waar je a
 
 ## Intake (week 1)
 **Je startniveau:** Mijn startniveau is rood
+
 **Je focus:** Ik wil mij graag meer focussen op surface plane
+
 **Je opdracht:** Mijn opdracht is de site van Tommy Hilfiger
+
 **Main:** Als main pagina kies ik de hoofdpagina van de dames kleding: https://nl.tommy.com/dames
+
 **Detail:** Als detail pagina kies is de detailpagina van een hoodie voor dames: https://nl.tommy.com/curve-biologisch-katoenen-hoodie-met-logo-ww0ww29732pkh
 
 **Screenshot(s) van de eerste pagina (small screen):**
+
 <img src="images/main1.PNG" width="375px" alt="Hoofdpagina">
+
 <img src="images/main2.PNG" width="375px" alt="Hoofdpagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
+
 <img src="images/detail1.PNG" width="375px" alt="Detailpagina">
+
 <img src="images/detail2.PNG" width="375px" alt="Detailpagina">
+
 <img src="images/detail3.PNG" width="375px" alt="Detailpagina">
 
