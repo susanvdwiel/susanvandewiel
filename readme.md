@@ -61,31 +61,30 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Breakdownschets (week 1)
-<img src="images/breakdown_schets.png" width="375px" alt="breakdownschets">
-Dit is mijn gemaakte breakdownschets van de main pagina, dus de pagina waar je als eerste opkomt wanneer je op 'dames' hebt geklikt. Dit is de hoofdpagina van de dames kleding van Tommy Hilfiger.
+
+-uitwerken voor de 1e werkgroep - eind van de eerste week-
+
+
 
 ## Intake (week 1)
-**Je startniveau:** Mijn startniveau is rood
+-uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je focus:** Ik wil mij graag meer focussen op surface plane
+**Je startniveau:** Rood
 
-**Je opdracht:** Mijn opdracht is de site van Tommy Hilfiger
+**Je focus:** Surface plane
 
-**Main:** Als main pagina kies ik de hoofdpagina van de dames kleding: https://nl.tommy.com/dames
+**Je opdracht:** Site Hilfiger
 
-**Detail:** Als detail pagina kies is de detailpagina van een hoodie voor dames: https://nl.tommy.com/curve-biologisch-katoenen-hoodie-met-logo-ww0ww29732pkh
+**Main:** https://nl.tommy.com/dames
+
+**Detail:** https://nl.tommy.com/curve-biologisch-katoenen-hoodie-met-logo-ww0ww29732pkh
 
 **Screenshot(s) van de eerste pagina (small screen):**
-
 <img src="images/main1.PNG" width="375px" alt="Hoofdpagina">
-
 <img src="images/main2.PNG" width="375px" alt="Hoofdpagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
-
 <img src="images/detail1.PNG" width="375px" alt="Detailpagina">
-
 <img src="images/detail2.PNG" width="375px" alt="Detailpagina">
-
 <img src="images/detail3.PNG" width="375px" alt="Detailpagina">
 
