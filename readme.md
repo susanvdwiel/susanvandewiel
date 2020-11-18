@@ -59,10 +59,16 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -na afloop snel uitkomsten vastleggen-
 
 
+## Breakdownschets na feedback (week 1)
+
+<img src="images/breakdown_schets_2.png" width="375px" alt="breakdown_schets_na_feedback">
+
 
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
+<img src="images/breakdown_schets.png" width="375px" alt="breakdown_schets">
+
 
 
 
@@ -81,10 +87,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s) van de eerste pagina (small screen):**
 <img src="images/main1.PNG" width="375px" alt="Hoofdpagina">
+
 <img src="images/main2.PNG" width="375px" alt="Hoofdpagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 <img src="images/detail1.PNG" width="375px" alt="Detailpagina">
+
 <img src="images/detail2.PNG" width="375px" alt="Detailpagina">
+
 <img src="images/detail3.PNG" width="375px" alt="Detailpagina">
 
