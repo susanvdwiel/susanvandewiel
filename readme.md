@@ -42,9 +42,7 @@ Ik vond het nog erg lastig om soms display:flex te gebruiken, met bijvoorbeeld f
 
 **Screenshot(s):**
 
-<img src="images/voortgang_1.png" width="375px" alt="Voortgang_main">
-
-
+<img src="images/voortgang_1.png">
 
 
 
@@ -80,7 +78,7 @@ Aangezien ik het fijn vond om de breakdownschets te gebruiken tijdens het codere
 
 ## Breakdownschets na feedback (week 1)
 
-**Werkgroep 2, week 1:** In werkgroep 1 kreeg ik feedback op mijn breakdownschets. Zo kreeg ik feedback om: meer iconen <icon> te gebruiken ipv <img>, ik was vergeten om de header, main en footer aan te geven, ook werd verteld dat het handig was om <'figure'> en <'figcaption'> te gebruiken. Dit heb ik aangepast in mijn breakdownschets, zodat dit mij makkelijker kan helpen tijdens het coderen.
+**Werkgroep 2, week 1:** In werkgroep 1 kreeg ik feedback op mijn breakdownschets. Zo kreeg ik feedback om: meer iconen <icon> te gebruiken ipv <img>, ik was vergeten om de header, main en footer aan te geven, ook werd verteld dat het handig was om <figure> en <figcaption> te gebruiken. Dit heb ik aangepast in mijn breakdownschets, zodat dit mij makkelijker kan helpen tijdens het coderen.
 
 <img src="images/breakdown_schets_2.png" width="375px" alt="breakdown_schets_na_feedback">
 
@@ -122,11 +120,5 @@ Aangezien ik het fijn vond om de breakdownschets te gebruiken tijdens het codere
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/detail1.PNG" width="375px" alt="Detailpagina">
-
-
-<img src="images/detail2.PNG" width="375px" alt="Detailpagina">
-
-
-<img src="images/detail3.PNG" width="375px" alt="Detailpagina">
+<img src="images/detail_pagina.png" width="375px" alt="detailpagina">
 
