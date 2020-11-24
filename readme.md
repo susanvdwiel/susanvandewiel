@@ -38,11 +38,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
-Ik vond het nog erg lastig om soms display:flex te gebruiken, met bijvoorbeeld flex-wrap:wrap of flex-basis:100%. Ik heb het meeste moeite gehad met de header, daar zit de meeste tijd in omdat ik het lastig vond om alles goed te positioneren. Na hulp van Martijn is het mij toch gelukt. 
+Ik vond het nog erg lastig om soms display:flex te gebruiken, met bijvoorbeeld flex-wrap:wrap of flex-basis:100%. Ik heb het meeste moeite gehad met de header, daar zit de meeste tijd in omdat ik het lastig vond om alles goed te positioneren. Na hulp van Martijn is het mij toch gelukt.
 
 **Screenshot(s):**
 
-<img>
+<img src="images/voortgang_1.png">
 
 
 
@@ -68,7 +68,7 @@ Ik ben nu nog bezig met de main page. Door een drukke week met veel ander huiswe
 -na afloop snel uitkomsten vastleggen-
 
 ## Breakdownschets detail page (week 3)
-Aangezien ik het fijn vond om de breakdownschets te gebruiken tijdens het coderen, heb ik ook een breakdownschets gemaakt van de detailpagina. 
+Aangezien ik het fijn vond om de breakdownschets te gebruiken tijdens het coderen, heb ik ook een breakdownschets gemaakt van de detailpagina.
 
 <img>
 
