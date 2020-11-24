@@ -38,11 +38,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Ik vond het nog erg lastig om soms display:flex te gebruiken, met bijvoorbeeld flex-wrap:wrap of flex-basis:100%. Ik heb het meeste moeite gehad met de header, daar zit de meeste tijd in omdat ik het lastig vond om alles goed te positioneren. Na hulp van Martijn is het mij toch gelukt. 
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img>
+
+
+
+
+
+Ik ben nu nog bezig met de main page. Door een drukke week met veel ander huiswerk vond ik het lastig te combineren (ook omdat ik coderen lastig vind, komt er gauw veel tijd bij kijken :-)). Ik vind dat ik tot nu toe al erg ver ben gekomen voor mijn doen.
+
+
+
 
 ### Agenda voor meeting
 
@@ -58,8 +67,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -na afloop snel uitkomsten vastleggen-
 
+## Breakdownschets detail page (week 3)
+Aangezien ik het fijn vond om de breakdownschets te gebruiken tijdens het coderen, heb ik ook een breakdownschets gemaakt van de detailpagina. 
+
+<img>
+
+
+
+
+
+
 
 ## Breakdownschets na feedback (week 1)
+
+**Werkgroep 2, week 1:** In werkgroep 1 kreeg ik feedback op mijn breakdownschets. Zo kreeg ik feedback om: meer iconen <icon> te gebruiken ipv <img>, ik was vergeten om de header, main en footer aan te geven, ook werd verteld dat het handig was om <figure> en <figcaption> te gebruiken. Dit heb ik aangepast in mijn breakdownschets, zodat dit mij makkelijker kan helpen tijdens het coderen.
 
 <img src="images/breakdown_schets_2.png" width="375px" alt="breakdown_schets_na_feedback">
 
@@ -68,8 +89,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 
-
 ## Breakdownschets (week 1)
+
+**Werkgroep 1, week 1:** In week 1 ben ik begonnen met een breakdownschets maken van de main page van de site van Tommy Hilfiger. Hierin gaf ik aan welke elementen de main page bevat. Dit maakt het later makkelijker om te coderen, een soort geheugensteuntje.
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
 
@@ -81,11 +103,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** Rood
+**Je startniveau:** Ik zit op starttniveau rood
 
-**Je focus:** Surface plane
+**Je focus:** Mijn focus is responsive
 
-**Je opdracht:** Site Hilfiger
+**Je opdracht:** Mijn opdracht is de site van Tommy Hilfiger
 
 **Main:** https://nl.tommy.com/dames
 
