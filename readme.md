@@ -42,7 +42,7 @@ Ik vond het nog erg lastig om soms display:flex te gebruiken, met bijvoorbeeld f
 
 **Screenshot(s):**
 
-<img src="images/voortgang_1.jpg" width="375px" alt="voortgang_1>
+<img src="images/voortgang_1.png" width="375px" alt="voortgang_1">
 
 
 
