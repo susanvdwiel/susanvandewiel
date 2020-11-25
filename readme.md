@@ -52,14 +52,37 @@ Ik ben nu nog bezig met de main page. Door een drukke week met veel ander huiswe
 
 
 ### Agenda voor meeting
+**Ik wil dit:
 
--samen met je groepje opstellen-
+- Hoe voeg je een eigen lettertype toe? (Ik heb een lettertype dat eindigt op .otf)
+- Hoe kun je het beste witruimte oplossen? Is dat alleen te doen met postion:absolute?
+- Hoe maak je een uitklapfooter?
+- Moet in Github ook de opdrachten komen te staan wat je hebt gemaakt in codepen.io?
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+**Palenque wil dit:
+
+-
+-
+-
+
+**Sarah wil dit:
+
+-
+-
+-
+
+**Suzanne wil dit:
+
+- Moet ik de talen selectie onderin de footer maken en hoe?
+- Moet ik de achtergrond van de kerstbanner ook uitwerken?
+
+**Casper wil dit:
+
+- Hoe zet ik een hartje op me foto’s en hoe bewerk ik dit goed met Javascript 
+- Ik twijfel of me site wel goed responsive is, heb ik wel de juiste code gebruikt hiervoor 
+- Hoe ga ik de tab bar verwerken in me website?
+- Hoe stijl ik de dropdown list met de foto’s etc er in op me detailpagina
+
 
 ### Verslag van meeting
 
