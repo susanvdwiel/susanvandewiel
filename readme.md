@@ -34,7 +34,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Huiswerk week 4
 Ik ben bezig geweest met het coderen van de detail pagina. Ik ben nu hier:
-<img src="images/detail_pagina2.png">
+<img src="images/detail_pagina2.png" width="375px">
 
 
 ## Voortgang 1 (week 3)
@@ -43,7 +43,7 @@ Ik ben bezig geweest met het coderen van de detail pagina. Ik ben nu hier:
 
 Ik vond het nog erg lastig om soms display:flex te gebruiken, met bijvoorbeeld flex-wrap:wrap of flex-basis:100%. Ik heb het meeste moeite gehad met de header, daar zit de meeste tijd in omdat ik het lastig vond om alles goed te positioneren. Na hulp van Martijn is het mij toch gelukt.
 
-<img src="images/voortgang_1.png">
+<img src="images/voortgang_1.png" width="375px">
 
 Ik ben nu nog bezig met de main page. Door een drukke week met veel ander huiswerk vond ik het lastig te combineren (ook omdat ik coderen lastig vind, komt er gauw veel tijd bij kijken :-)). Ik vind dat ik tot nu toe al erg ver ben gekomen voor mijn doen.
 
