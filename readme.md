@@ -32,10 +32,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -same as voortgang 1-
 
-
 ## Huiswerk week 4
-
-
+Ik ben bezig geweest met het coderen van de detail pagina. Ik ben nu hier:
+<img src="images/detail_pagina2.png">
 
 
 ## Voortgang 1 (week 3)
@@ -44,52 +43,23 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 Ik vond het nog erg lastig om soms display:flex te gebruiken, met bijvoorbeeld flex-wrap:wrap of flex-basis:100%. Ik heb het meeste moeite gehad met de header, daar zit de meeste tijd in omdat ik het lastig vond om alles goed te positioneren. Na hulp van Martijn is het mij toch gelukt.
 
-**Screenshot(s):**
-
-<img src="images/voortgang_1.png" width="375px" alt="voortgang_1">
-
-
+<img src="images/voortgang_1.png">
 
 Ik ben nu nog bezig met de main page. Door een drukke week met veel ander huiswerk vond ik het lastig te combineren (ook omdat ik coderen lastig vind, komt er gauw veel tijd bij kijken :-)). Ik vind dat ik tot nu toe al erg ver ben gekomen voor mijn doen.
 
-
-
-
 ### Agenda voor meeting
-Ik wil graag:
-- Hoe voeg je een eigen lettertype toe? (Ik heb een lettertype dat eindigt op .otf)
-- Hoe kun je het beste witruimte oplossen? Is dat alleen te doen met postion:absolute?
-- Hoe maak je een uitklapfooter?
-- Moet in Github ook de opdrachten komen te staan wat je hebt gemaakt in codepen.io?
 
-Suzanne wil graag:
-- Moet de talen selectie onderin de footer ook gemaakt worden en hoe?
-- Moet de achtergrond van de kerst banner ook uitgewerkt worden?
+-samen met je groepje opstellen-
 
-Palenque wil graag:
-- Moet ik de carousel/slider/button maken met gewoon css?
-- Moet ik de foto’s van insta “life” er in zetten? 
-- Moeten de links binnen je eigen website terug linken naar de andere pagina?
-
-Sarah wil graag:
-- Hoe zet ik een hartje op me foto’s en hoe bewerk ik dit goed met Javascript 
-- Ik twijfel of me site wel goed responsive is, heb ik wel de juiste code gebruikt hiervoor 
-- Hoe ga ik de tab bar verwerken in me website?
-- Hoe stijl ik de dropdown list met de foto’s etc er in op me detailpagina
-
+| student 1      | student 2          | student 3    | student 4        |
+| ---            | ---                | ---          | ---              |
+| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+| ...            | ...                | ...          | ...              |
 
 ### Verslag van meeting
 
 -na afloop snel uitkomsten vastleggen-
-
-## Breakdownschets detail page (week 3)
-Aangezien ik het fijn vond om de breakdownschets te gebruiken tijdens het coderen, heb ik ook een breakdownschets gemaakt van de detailpagina.
-
-<img>
-
-
-
-
 
 
 
