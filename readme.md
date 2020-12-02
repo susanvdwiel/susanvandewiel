@@ -33,6 +33,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -same as voortgang 1-
 
 
+## Huiswerk week 4
+
+
+
 
 ## Voortgang 1 (week 3)
 
@@ -58,19 +62,14 @@ Ik wil graag:
 - Hoe maak je een uitklapfooter?
 - Moet in Github ook de opdrachten komen te staan wat je hebt gemaakt in codepen.io?
 
-Casper wil graag:
--
--
--
-
 Suzanne wil graag:
 - Moet de talen selectie onderin de footer ook gemaakt worden en hoe?
 - Moet de achtergrond van de kerst banner ook uitgewerkt worden?
 
 Palenque wil graag:
--
--
--
+- Moet ik de carousel/slider/button maken met gewoon css?
+- Moet ik de foto’s van insta “life” er in zetten? 
+- Moeten de links binnen je eigen website terug linken naar de andere pagina?
 
 Sarah wil graag:
 - Hoe zet ik een hartje op me foto’s en hoe bewerk ik dit goed met Javascript 
