@@ -1,5 +1,670 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+html {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'mywebfont', sans-serif;
+}
+
+main {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body header nav {
+    top: -1.5em;
+}
+
+/* display flex om ........., list style none om geen puntje voor de li te hebben */
+nav ul {
+    display: flex;
+}
+
+/* de grootte van de iconen */
+body header nav ul li img {
+    width: 2.5em;
+}
+
+/* display flex om iconen naast elkaar te zetten, space-between om ruimte te houden tussen de iconen, relative om alle iconen op dezelfde plek te houden */
+body header nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* logo in het midden gecentreerd */
+body header nav ul:nth-of-type(2) li {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* hamburgermenu naar links geplaatst */
+body header nav ul:nth-of-type(1) li {
+    position: absolute;
+    left: 0.1em;
+    top: 1.45em;
+}
+
+/* Rechter iconen meer naast elkaar gezet */
+body header nav ul:nth-of-type(3) li {
+    width: 2.5em;
+}
+
+/* Grootte van de foto's van de slider */
+body header ul:nth-of-type(1) li figure img {
+    width: 140%;
+    overflow: hidden;
+}
+
+/* Elementen om de slider te maken */
+header section:nth-of-type(1) ul:nth-of-type(1) {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    top: -3.5em;
+}
+
+/* De slider meer naar links centreren en flex-shrink voor ..... */
+header section:nth-of-type(1) ul:nth-of-type(1) li {
+    margin-left: -3em;
+    flex-shrink: 0;
+}
+
+/* De foto's dichter naar elkaar toe zetten */
+header section:nth-of-type(1) ul:nth-of-type(1) figure {
+    position: relative;
+    right: 1.6em;
+    width: 4em;
+}
+
+/* De grootte van het onderschrift */
+header section:nth-of-type(1) ul figcaption {
+    font-size: 0.6em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+}
+
+/* de maximale grootte van de foto aangeven */
+body main section:nth-of-type(1) img {
+    display: flex;
+    z-index: 10;
+}
+
+/* titel regel 1 aanpassen */
+body main section:nth-of-type(1) h3:nth-of-type(1) {
+    position: absolute;
+    bottom: 10em;
+    font-size: 1.2em;
+    color: white;
+    left: 2em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 900;
+    z-index: 10;
+}
+
+/* titel regel 2 aanpassen */
+body main section:nth-of-type(1) h3:nth-of-type(2) {
+    position: absolute;
+    bottom: 8.5em;
+    font-size: 1.2em;
+    color: white;
+    left: 2em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 900;
+    z-index: 10;
+}
+
+/* ondertekst aanpassingen */
+body main section:nth-of-type(1) p {
+    position: absolute;
+    font-size: 0.7em;
+    bottom: 10em;
+    color: white;
+    left: 3.5em;
+    line-height: 1.5em;
+    font-weight: 500;
+    z-index: 10;
+    max-width: 25em;
+}
+
+body main section:nth-of-type(1) a {
+    position: absolute;
+    color: black;
+    font-size: 0.6em;
+    bottom: 8em;
+    left: 3.5em;
+    right: 12em;
+    background-color: white;
+    padding: 1.2em;
+    border-radius: 0.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    z-index: 10;
+}
+
+body main section:nth-of-type(2) img {
+    width: 100%;
+}
+
+body main section:nth-of-type(2) ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+}
+
+body main section:nth-of-type(2) li:nth-of-type(1) {
+    flex-basis: 100%;
+}
+
+body main section:nth-of-type(2) li:nth-of-type(2), body main section:nth-of-type(2) li:nth-of-type(3) {
+    flex-basis: 49%;
+}
+
+body main section:nth-of-type(2) li {
+    position: relative;
+}
+
+body main section:nth-of-type(2) h4 {
+    position: absolute;
+    bottom: 1em;
+    color: white;
+    text-transform: uppercase;
+    bottom: -0.5em;
+    font-weight: 900;
+    justify-content: center;
+}
+
+body main section:nth-of-type(2) ul li:nth-of-type(1) a h4 {
+    right: 30%;
+    left: 30%;
+}
+
+body main section:nth-of-type(2) ul li:nth-of-type(2) a h4, body main section:nth-of-type(2) ul li:nth-of-type(3) a h4  {
+    right: 10%;
+    left: 10%;
+}
+
+body main section:nth-of-type(2) ul li:nth-of-type(4) a h4 {
+    right: 20%;
+    left: 20%;
+}
+
+body main section:nth-of-type(3) {
+    position: relative;
+    top: 0.1em;
+}
+
+body main section:nth-of-type(3) h3 {
+    position: relative;
+    right: -2em;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: white;
+}
+
+body main section:nth-of-type(3) h3:nth-of-type(1) {
+    bottom: 14em;
+}
+
+body main section:nth-of-type(3) h3:nth-of-type(2) {
+    bottom: 14.5em;
+}
+
+body main section:nth-of-type(3) p {
+    position: relative;
+    bottom: 20.5em;
+    left: 2em;
+    font-size: 0.8em;
+    color: white;
+    left: 2.7em;
+    line-height: 1.5em;
+    font-weight: 500;
+    max-width: 20em;
+}
+
+body main section:nth-of-type(3).collectie a {
+    color: black;
+    position: relative;
+    font-size: 0.6em;
+    right: 12em;
+    background-color: white;
+    padding: 1.2em;
+    border-radius: 0.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+body main section:nth-of-type(3) a:nth-of-type(1) {
+    bottom: 27em;
+    left: 3.5em;
+}
+
+body main section:nth-of-type(3) a:nth-of-type(2) {
+    bottom: 23em;
+    left: -13em;
+}
+
+body main section:nth-of-type(4) {
+    position: relative;
+    bottom: 11.5em;
+}
+
+body main section:nth-of-type(4) img {
+    width: 100%;
+}
+
+body main section:nth-of-type(4) li {
+    position: relative;
+}
+
+body main section:nth-of-type(4) ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+}
+
+body main section:nth-of-type(4) li:nth-of-type(1), body main section:nth-of-type(4) li:nth-of-type(2) {
+    flex-basis: 49%;
+}
+
+body main section:nth-of-type(4) h4 {
+    position: absolute;
+    bottom: 1em;
+    color: white;
+    text-transform: uppercase;
+    bottom: -0.8em;
+    font-weight: 900;
+    justify-content: center;
+    left: 25%;
+}
+
+body main section:nth-of-type(5) ol {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+body main section:nth-of-type(5) li {
+    display: flex;
+    flex-basis: 50%;
+}
+
+/* achtergrond kleur section */
+body main section:nth-of-type(5) {
+    position: relative;
+    background-color: rgb(0, 23, 78);
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    padding-bottom: 4em;
+    bottom: 11.5em;
+}
+
+body main section:nth-of-type(5) h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+body main section:nth-of-type(5) a {
+    color: white;
+    border: white solid 0.2em;
+    padding: 0.5em;
+    margin: 0.2em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 500;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* slider 2.0 */
+body main section:nth-of-type(6) {
+    position: relative;
+    bottom: 10em;
+}
+
+body main section:nth-of-type(6) h2 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+body main section:nth-of-type(6) ul {
+    display: flex;
+    overflow-x: scroll;
+    margin-left: -2em;
+}
+
+body main section:nth-of-type(6) li {
+    margin: 0.2em;
+}
+
+body main section:nth-of-type(6) img {
+    flex-shrink: 0;
+    background-color: green;
+    max-width: 20em;
+}
+
+body main section:nth-of-type(6) h3 {
+    position: relative;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    left: 25%;
+}
+
+body main section:nth-of-type(6) p {
+    font-size: 0.8em;
+    max-width: 19em;
+    margin-left: 3em;
+}
+
+body main section:nth-of-type(6) a {
+    position: relative;
+    color: black;
+    font-size: 0.8em;
+    border: 0.2em solid black;
+    background-color: white;
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-left: 8%;
+    top: 1em;
+}
+
+/* jouw Tommy stijl */
+body main section:nth-of-type(7) {
+    position: relative;
+    top: 3em;
+}
+
+body main section:nth-of-type(7) h2 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+
+body main section:nth-of-type(7) p:nth-of-type(1) {
+    position: relative;
+    font-size: 0.8em;
+    line-height: 1.8em;
+    bottom: 1.5em;
+}
+
+body main section:nth-of-type(7) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body main section:nth-of-type(7) img {
+    max-width: 100%;
+}
+
+body main section:nth-of-type(7) p:nth-of-type(2) {
+    position: relative;
+    font-size: 0.7em;
+    left: 35%;
+}
+
+body main article:nth-of-type(1) h2 {
+    position: relative;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    bottom: -4em;
+    text-align: center;
+}
+
+body main article:nth-of-type(1) p {
+    position: relative;
+    bottom: -6em;
+    max-width: 30em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+    font-size: 0.8em;
+}
+
+body main article:nth-of-type(1) a {
+    text-decoration: underline;
+}
+
+body main  article:nth-of-type(1) p:nth-of-type(2) {
+    padding-bottom: 5em;
+}
+
+/* Opmaak footer */
+body footer section:nth-of-type(1) {
+    background-color: rgb(0, 23, 78);
+    color: white;
+}
+
+body footer section:nth-of-type(1) h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: white;
+    padding-top: 1em;
+    padding-left: 0.65em;
+    letter-spacing: 0.1em;
+}
+
+body footer section:nth-of-type(1) p {
+    position: relative;
+    font-size: 0.8em;
+    color: white;
+    padding: 1em;
+    bottom: 1em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+body footer section:nth-of-type(1) input {
+    position: relative;
+    padding: 1em;
+    width: 20em;
+    border: 0.2em solid rgb(244,244,244);
+    margin: 2.2em;
+    bottom: 4em;
+}
+
+/* uitklap footer */
+body footer section:nth-of-type(2) {
+    position: relative;
+    background-color: rgb(204, 12, 47);
+    color: white;
+    bottom: 3.5em;
+}
+
+body footer section:nth-of-type(2) details {
+    font-size: 0.7em;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+body footer section:nth-of-type(2) details:nth-of-type(1) {
+    padding-top: 2em;
+}
+
+
+
+
+
+
+/* Detail pagina */
+body header h2 {
+    position: relative;
+    background-color: rgb(29, 46, 93);
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    bottom: 4em;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+body main section:nth-of-type(1) .slider {
+    position: relative;
+    margin-left: -3em;
+    bottom: 3em;
+}
+
+body main section:nth-of-type(1) nav ul {
+    display: flex;
+    overflow-x: scroll;
+}
+
+body main section:nth-of-type(1) nav ul li img {
+    flex-shrink: 0;
+    max-width: 20em;
+}
+
+body main section:nth-of-type(1) li {
+    margin: 0.2em;
+}
+
+body main section:nth-of-type(2) .th {
+    position: relative;
+    font-size: 0.8em;
+    color: rgb(0, 23, 78);
+    text-transform: uppercase;
+    font-weight: 600;
+    bottom: 0.5em;
+}
+
+body main section:nth-of-type(2) h3 {
+    position: relative;
+    color: rgb(185, 40, 52);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 900;
+    bottom: 0.5em;
+    line-height: 1.3em;
+}
+
+body main section:nth-of-type(2) span:nth-of-type(1) {
+    display: flex;
+}
+
+body main section:nth-of-type(2) span:nth-of-type(1) p:nth-of-type(1) {
+    font-weight: 900;
+    color: rgb(0, 23, 78);
+    position: relative;
+    bottom: 1.2em;
+    font-size: 1em;
+}
+
+body main section:nth-of-type(2) span:nth-of-type(1) p:nth-of-type(2) {
+    font-weight: 200;
+    color: grey;
+    position: relative;
+    bottom: 1.2em;
+    font-size: 0.8em;
+    left: 0.75em;
+}
+
+body main section:nth-of-type(2) span:nth-of-type(2) {
+    display: flex;
+}
+
+
+body main section:nth-of-type(2) span:nth-of-type(2) p:nth-of-type(1) {
+    font-weight: 200;
+    color: grey;
+    position: relative;
+    bottom: 1.2em;
+    font-size: 0.8em;
+    bottom: 2.5em;
+}
+
+body main section:nth-of-type(2) span:nth-of-type(2) p:nth-of-type(2) {
+    position: relative;
+    font-weight: 400;
+    color: rgb(0, 23, 78);
+    position: relative;
+    bottom: 1.2em;
+    font-size: 0.8em;
+    left: 0.75em;
+    bottom: 2.5em;
+}
+
+body main section:nth-of-type(3) {
+    position: relative;
+    top: -2em;
+}
+
+body main section:nth-of-type(3) a img {
+    border-radius: 50%;
+    max-width: 20%;
+}
+
+body main section:nth-of-type(4).maten {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+body main section:nth-of-type(4).maten p {
+    position: absolute;
+    top: 10em;
+}
+
+body main section:nth-of-type(4).maten a {
+    position: relative;
+    top: 13em;
+    color: black;
+    font-size: 1em;
+    border: 0.1em solid black;
+    background-color: white;
+    padding-left: 3em;
+    width: 3em;
+    display: flex;
+}
+
+body main section:nth-of-type(5).extra_info {
+    background-color: red;
+}
+
+body main section:nth-of-type(6).slider_2 {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
 
