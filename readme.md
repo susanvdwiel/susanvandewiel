@@ -29,8 +29,37 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 2 (week 5)
+Susan
+- Hoe los ik de witruimte op (nergens zit een grote width, height, margin of padding op)
+- Hoe stijl ik de footer? Op internet staan alleen maar moeilijke dingen
+- Hoe maak ik de functieloze groene balk onder de foto (en hoe gaat deze responsive mee?)
+- Hoeveel classes mag je meegeven? Ik heb er nu 1 op de main van de detailpagina, mag dat wel?
 
--same as voortgang 1-
+Suzanne
+- Weten hoe ik mijn carousel moet maken?
+- Hoe ik bij 'waarom sonos' de afbeeldingen over elkaar moet plaatsen en positioneren?
+- Hoe ik bij 'waarom sonons' die underline kleiner maak?
+- Hoeveel 'kopjes' ik bij de nieuws pagina moet maken?
+- Hoe krijg ik bij kerst mijn achtergrond img?
+    
+Sarah
+- Hoe gebruik ik de ::before goed voor de strepen
+- Hoe maak ik me tabbar sticky
+- Hoe fix ik me tabbar goed 
+- Hoe maak ik de dropdown zoals op de website
+
+Palenque
+- Hoe zorg ik er voor dat me menubar sticky wordt. 
+- Hoe zorg ik er voor dat je niet kan scrollen als me menu open staat.
+- Hoe maak ik me button bewegend?
+- Moet ik die flash img aanpassen?
+
+### Verslag van meeting
+
+-na afloop snel uitkomsten vastleggen-
+
+
+
 
 ## Huiswerk week 4
 Ik ben bezig geweest met het coderen van de detail pagina. Ik ben nu hier:
@@ -48,14 +77,26 @@ Ik vond het nog erg lastig om soms display:flex te gebruiken, met bijvoorbeeld f
 Ik ben nu nog bezig met de main page. Door een drukke week met veel ander huiswerk vond ik het lastig te combineren (ook omdat ik coderen lastig vind, komt er gauw veel tijd bij kijken :-)). Ik vind dat ik tot nu toe al erg ver ben gekomen voor mijn doen.
 
 ### Agenda voor meeting
+Susan
+- Hoe voeg je een eigen lettertype toe? (Ik heb een lettertype dat eindigt op .otf)
+- Hoe kun je het beste witruimte oplossen? Is dat alleen te doen met postion:absolute?
+- Hoe maak je een uitklapfooter?
+- Moet in Github ook de opdrachten komen te staan wat je hebt gemaakt in codepen.io?
 
--samen met je groepje opstellen-
+Suzanne
+- Hoe talenselectie  onderin de footer?
+- Hoe kerstbanner uitwerken?
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Sarah
+- Hoe zet ik een hartje op me foto’s en hoe bewerk ik dit goed met Javascript 
+- Ik twijfel of me site wel goed responsive is, heb ik wel de juiste code gebruikt hiervoor 
+- Hoe ga ik de tab bar verwerken in me website?
+- Hoe stijl ik de dropdown list met de foto’s etc er in op me detailpagina
+
+Palenque
+- Moet ik de carousel/slider/button maken met gewoon css?
+- Moet ik de foto’s van insta “life” er in zetten? 
+- Moeten de links binnen je eigen website terug linken naar de andere pagina?
 
 ### Verslag van meeting
 
@@ -107,5 +148,5 @@ Ik ben nu nog bezig met de main page. Door een drukke week met veel ander huiswe
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/detail_pagina.png" width="375px" alt="detailpagina">
+<img src="images/pagina_detail.png" width="375px" alt="detailpagina">
 
