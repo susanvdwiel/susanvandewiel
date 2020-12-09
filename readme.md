@@ -148,5 +148,5 @@ Palenque
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/pagina_detail.png" width="375px" alt="detailpagina">
+<img src="images/pagina_detail.png" width="375px" alt="paginadetail">
 
