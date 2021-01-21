@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 
+<!-- De head met daarin de stylesheet en het font gelinkt -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,13 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
-<!-- De head met daarin de stylesheet en het font gelinkt -->
 
 <body>
-    <header>
-        <!-- De navigatie -->
+    <header id="index">
+        <!-- De primaire navigatie gebaseerd op een nav met ul-structuur met daarin li en img. Ook een form om te zoeken -->
         <nav>
             <ul>
-                <li>
+                <li id="toggle">
                     <img src="images/hamburger.png" alt="hamburgermenu">
                 </li>
             </ul>
@@ -27,6 +27,9 @@
             </ul>
             <ul>
                 <li>
+                    <a>aanmelden</a>
+                </li>
+                <li>
                     <img src="images/zoeken.png" alt="zoeken">
                 </li>
                 <li>
@@ -36,10 +39,66 @@
                     <img src="images/shoppingbag.png" alt="shoppingbag">
                 </li>
             </ul>
-            <form action="#" method="post"><p>zoeken...</p><img src="images/zoeken.png"></form>
-            <a>aanmelden</a>
+            <form action="#" method="post">
+                <p>zoeken...</p>
+            </form>
         </nav>
-        <!-- De navigatie met foto's -->
+        <!-- De secundaire nav is gebaseerd op het hamburgermenu en staat gekoppeld aan het JS document -->
+        <nav id="navigatie">
+            <div>
+                <a id="toggleTwee">
+                    <img src="images/kruisje.png">
+                </a>
+            </div>
+            <div>
+                <a>aanmelden</a>
+            </div>
+            <ul>
+                <li>
+                    <form action="#" method="post">
+                        <p>zoeken...</p>
+                        <img src="images/zoeken.png">
+                    </form>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a>dames</a>
+                    <img src="images/pijltje.png">
+                </li>
+                <li>
+                    <a>heren</a>
+                    <img src="images/pijltje.png">
+                </li>
+                <li>
+                    <a>kinderen</a>
+                    <img src="images/pijltje.png">
+                </li>
+            </ul>
+            <ul>
+                <h4>ontdekken</h4>
+                <li>
+                    <a>tommy jeans</a>
+                    <img src="images/pijltje_wit.png">
+                </li>
+                <li>
+                    <a>sale</a>
+                    <img src="images/pijltje_wit.png">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a>winkels</a>
+                </li>
+                <li>
+                    <a>klantenservice</a>
+                </li>
+                <li>
+                    <a>aanmelden</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Hier wordt gebruik gemaakt van een section gebaseerd op een ul-structuur met daarin li / figure / img / figcaption -->
         <section>
             <ul>
                 <li>
@@ -75,8 +134,8 @@
             </ul>
         </section>
     </header>
-    <main>
-        <!-- De grote foto met "girls' night in" -->
+    <main class="index">
+       <!-- Hier wordt gebruik gemaakt van een section met daarin een img / h3 / p / a  voor het stuk "grils' night in" -->
         <section>
             <img src="images/foto_5.png" alt="Candace_Reels">
             <h3>girls'</h3>
@@ -84,8 +143,9 @@
             <p>Powergirl Candace Reels maakt zich klaar om de feestdagen te vieren met de vrouwen waar ze van houdt - scoor haar stijl voor je eigen soiree.</p>
             <a href="#">shop holiday looks</a>
         </section>
-        <!-- De inspiratie foto's en tegels waar je op kunt klikken -->
+        <!-- Hier wordt gebruik gemaakt van een section met daarin een ul-structuur met li / a / img / h4 voor het stuk met de vier content foto's -->
         <section>
+            <h3>Shop per categorie</h3>
             <ul>
                 <li>
                     <a><img src="images/foto_11.jpg" alt="holiday_looks">
@@ -103,13 +163,13 @@
                     </a>
                 </li>
                 <li>
-                    <a><img src="images/cadeau.jpg" alt="cadeau_voor_haar">
+                    <a><img src="images/cadeau.png" alt="cadeau_voor_haar">
                         <h4>cadeaus voor haar</h4>
                     </a>
                 </li>
             </ul>
         </section>
-        <!-- De tegel waar je op kunt klikken -->
+        <!-- Hier wordt gebruik gemaakt van een section met daarin img / h3 / p / a voor het stuk "hilfiger collection" -->
         <section class="collectie">
             <img src="images/foto_8.jpg" alt="collectie">
             <h3>hilfiger</h3>
@@ -118,7 +178,7 @@
             <a href="#">shop de collectie</a>
             <a href="#">shop jassen en jacks</a>
         </section>
-        <!-- Meer inspiratie -->
+        <!-- Hier wordt gebruik gemaakt van een section met daarin een ul-structuur met li / a / img / h4 voor het stuk "jurken" en "sneakers" -->
         <section>
             <ul>
                 <li>
@@ -133,46 +193,78 @@
                 </li>
             </ul>
         </section>
-        <!-- De categorieën -->
+        <!-- Hier wordt gebruik gemaakt van een section met daarin een h2 en een ul-structuur met li / a voor het stuk "meer categorieen" -->
         <section class="categorie">
             <h2>meer categorieën</h2>
-            <ol>
+            <ul>
                 <li><a href="#">broeken</a></li>
                 <li><a href="#">accessoires</a></li>
                 <li><a href="#">truien en vesten</a></li>
                 <li><a href="#">laarzen</a></li>
-            </ol>
+            </ul>
         </section>
-        <!-- Ontdek meer met foto's in de slider -->
+        <!-- Hier wordt gebruik gemaakt van een section met daarin een nav die is opgedeeld in een ul-structuur met li / figure / img / figcaption / h3 / p / a voor de slider "ontdek meer" -->
         <section>
             <nav>
                 <h2>Ontdek meer</h2>
                 <ul>
-                    <li><img src="images/support_sound.jpg" alt="foto_1"></li>
-                    <li><img src="images/slider_1.jpg" alt="foto_1"></li>
-                    <li><img src="images/slider_2.jpg" alt="foto_1"></li>
-                    <li><img src="images/slider_3.jpg" alt="foto_1"></li>
+                    <li>
+                        <figure> <img src="images/support_sound.jpg" alt="foto_1">
+                            <figcaption>
+                                <h3>support our sound</h3>
+                                <p>Om upcoming artiesten te helpen gingen we een co-creatie aan met internationale muziekplatforms: shop nu en steun lokaal talent.</p>
+                                <a href="#">shop nu</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/slider_1.jpg" alt="foto_1">
+                            <figcaption>
+                                <h3>support our sound</h3>
+                                <p>Om upcoming artiesten te helpen gingen we een co-creatie aan met internationale muziekplatforms: shop nu en steun lokaal talent.</p><a href="#">shop nu</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/slider_2.jpg" alt="foto_1">
+                            <figcaption>
+                                <h3>support our sound</h3>
+                                <p>Om upcoming artiesten te helpen gingen we een co-creatie aan met internationale muziekplatforms: shop nu en steun lokaal talent.</p><a href="#">shop nu</a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="images/slider_3.jpg" alt="foto_1">
+                            <figcaption>
+                                <h3>support our sound</h3>
+                                <p>Om upcoming artiesten te helpen gingen we een co-creatie aan met internationale muziekplatforms: shop nu en steun lokaal talent.</p><a href="#">shop nu</a>
+                            </figcaption>
+                        </figure>
+                    </li>
                 </ul>
-                <h3>support our sound</h3>
-                <p>Om upcoming artiesten te helpen gingen we een co-creatie aan met internationale muziekplatforms: shop nu en steun lokaal talent.</p><a href="#">shop nu</a>
             </nav>
         </section>
-        <!-- Inspiratie van social media -->
+        <!-- Hier wordt gebruik gemaakt van een section met daarin h2 / p en een ul=structuur met li / img en een p voor het stuk "jouw  Tommy Hilfiger stijl -->
         <section>
             <h2>Jouw @TommyHilfiger stijl </h2>
             <p>Deel je beste Tommy Hilfiger stijl met #tommyhilfiger, tag ons @tommyhilfiger en maak kans op een vermelding. </p>
-            <span>
-                <img src="images/stijl_1.jpg" alt="foto_1">
-                <img src="images/stijl_2" alt="foto_1">
-                <img src="images/stijl_3" alt="foto_1">
-                <img src="images/stijl_4.jpg" alt="foto_1">
-                <img src="images/stijl_5" alt="foto_1">
-                <img src="images/stijl_6.jpg" alt="foto_1">
-            </span>
+            <ul>
+                <li>
+                    <img src="images/stijl_1.jpg" alt="foto_1">
+                </li>
+                <li><img src="images/stijl_2.png" alt="foto_1"></li>
+                <li><img src="images/stijl_3.png" alt="foto_1"></li>
+                <li><img src="images/stijl_4.jpg" alt="foto_1"></li>
+                <li><img src="images/stijl_5.png" alt="foto_1"></li>
+                <li><img src="images/stijl_6.png" alt="foto_1"></li>
+            </ul>
             <p>Powered by Olapic</p>
         </section>
-        <!-- Tekst over Tommy Hilfiger dames -->
-        <article>
+        <!-- Hier wordt gebruik gemaakt van een section met daarin een h2 / p / a  voor het stuk "Tommy Hilfiger dames" -->
+        <section>
             <h2>Tommy Hilfiger dames</h2>
             <p>
                 Ontdek de nieuwste looks in de collecties <a>dameskleding</a>, schoenen, tassen en accessoires van Tommy Hilfiger. Met de Tommy Hilfiger collectie van dit seizoen zit je goed, of je nu shopt voor een glamoureus evenement, je volgende festival of een avondje uit. Ons aanbod met damesjurken bevat opvallende stijlen met felbegeerde zwarte jurken, skaterjurken en avondjurken met pailletten. Ga voor klassiek met een <a>poloshirt voor dames</a> of bekijk onze <a>Tommy Sport collectie</a> met luxe trainingsbroeken, T-shirts en hoodies, waarmee je jouw look gemakkelijk van een straatwaardige look naar een look die geschikt is voor de sportschool kunt omtoveren.
@@ -180,9 +272,9 @@
             <p>
                 Onze collectie <a>damesschoenen</a> bevat instappers en brogues van kwaliteitsvol leer, strakke platte schoenen waarmee je in stijl een statement maakt en enkellaarsjes in de nieuwste stijlen. Ontdek onze “nieuw”-sectie om de nieuwste items te bekijken of bekijk onze sale om chique musthaves, nog voordat ze uitverkocht zijn, te shoppen. Tommy Hilfiger voor dames is de eerste bestemming om een statement outfit te shoppen, wat je stijl ook is.
             </p>
-        </article>
+        </section>
     </main>
-    <!-- De footer -->
+    <!-- Het eerste deel van de footer dat is opgedeeld in een section met daarin een h2 / p / input -->
     <footer>
         <section>
             <h2>
@@ -193,7 +285,7 @@
             </p>
             <input placeholder="Vul uw e-mailadres in">
         </section>
-        <!-- De dropdowns in de footer -->
+        <!-- Het tweede deel van de footer dat is opgedeeld in een section met daarin details / summery / a om een dropdown te maken van de footer -->
         <section>
             <details>
                 <summary>Jouw bestellingen</summary>
@@ -244,4 +336,7 @@
             </details>
         </section>
     </footer>
-</body></html>
+    <!-- De link naar het JS betand om het hamburgermenu werkend te maken -->
+    <script src="script/script.js"></script>
+</body>
+</html>

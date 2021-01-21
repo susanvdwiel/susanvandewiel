@@ -5,96 +5,277 @@ html {
 }
 
 body {
-    font-family: 'mywebfont', sans-serif;
+    font-family: sans-serif;
+    margin: 0;
+    max-width: 100vw;
+    z-index: 100;
 }
 
 main {
     overflow: hidden;
 }
 
+/* geen decoratie bij de linkjes */
 a {
     text-decoration: none;
 }
 
-ul {
+/* geen decoratie bij de (un)orderd lijsten */
+ul,
+ol {
     list-style-type: none;
 }
 
-body header nav {
-    top: -1.5em;
-}
+/**/
+/* de indexpagina */
+/**/
 
-/* display flex om ........., list style none om geen puntje voor de li te hebben */
-nav ul {
-    display: flex;
-}
+/**/
+/* de styling van de eerste navigatie van de index pagina waarbij gebruik wordt gemaakt van een nav met daarin verschillende ul, li, linkjes en een form */
+/**/
 
-/* de grootte van de iconen */
-body header nav ul li img {
-    width: 2.5em;
-}
-
-/* display flex om iconen naast elkaar te zetten, space-between om ruimte te houden tussen de iconen, relative om alle iconen op dezelfde plek te houden */
-body header nav {
+/* de iconen van de navigatie naast elkaar plaatsen met ruimte ertussen */
+body header nav:nth-of-type(1) {
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-/* logo in het midden gecentreerd */
-body header nav ul:nth-of-type(2) li {
+/* unordered list display flex meegegeven om de iconen naast elkaar te zetten */
+body header nav:nth-of-type(1) ul {
+    display: flex;
+}
+
+/* de grootte van de iconen */
+body header nav:nth-of-type(1) ul li img {
+    width: 2.5em;
+}
+
+/* hamburger icoon naar links geplaatst */
+body header nav:nth-of-type(1) ul:nth-of-type(1) li {
+    position: absolute;
+    left: 0.1em;
+    top: 1.45em;
+}
+
+/* kleine logo in het midden gecentreerd */
+body header nav:nth-of-type(1) ul:nth-of-type(2) li {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* hamburgermenu naar links geplaatst */
-body header nav ul:nth-of-type(1) li {
-    position: absolute;
-    left: 0.1em;
-    top: 1.45em;
+/* rechter iconen meer naast elkaar */
+body header nav:nth-of-type(1) ul:nth-of-type(3) li {
+    align-self: center;
 }
 
-/* Rechter iconen meer naast elkaar gezet */
-body header nav ul:nth-of-type(3) li {
+/* opmaak van de "aanmelden" knop */
+body #index nav:nth-of-type(1) ul:nth-of-type(3) li a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(29, 46, 93);
+}
+
+/* grote logo staat uit want deze wordt vanaf 600px weergegeven */
+body header nav:nth-of-type(1) ul:nth-of-type(2) li img:nth-of-type(2) {
+    display: none;
+}
+
+/* aanmeldknop staat uit want deze wordt vanaf 600px weergegeven */
+body header nav:nth-of-type(1) a {
+    display: none;
+}
+
+/**/
+/* de styling van het hamburgermenu dat gekoppeld is aan javascript om het hamburgermenu klikbaar te maken van links naar rechts uitschuift. het bestaat uit een nav met div'jes met daarin linkjes, foto's en een form */
+/**/
+
+/* zorgen dat het hamburgermenu gefixed staat, uit beeld staat en een minimale height heeft van 100 view height zodat hij het hele scherm inneemt */
+body #index nav:nth-of-type(2) {
+    position: fixed;
+    left: -102vw;
+    top: 0;
+    min-height: 100vh;
+    z-index: 100;
+    background-color: white;
+}
+
+/* de content wat meer naar links positioneren */
+body #index nav:nth-of-type(2) ul {
+    margin-left: -1.5em;
+}
+
+/* de grootte van het hamburger icoon kruisje */
+body #index nav:nth-of-type(2) div:nth-of-type(1) a img {
+    width: 2em;
+}
+
+/* de opmaak van de aanmeldenknop */
+body #index nav:nth-of-type(2) div:nth-of-type(2) {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(29, 46, 93);
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.5em;
+}
+
+/* de opmaak van de zoek functie */
+body #index nav:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) form p {
+    background: rgb(244, 244, 244);
+    width: 87%;
+    padding: 1em;
+    font-size: 0.8em;
+    color: rgb(29, 46, 93);
+}
+
+/* het zoekicoon in de zoekform */
+body #index nav:nth-of-type(2) ul:nth-of-type(1) li:nth-of-type(1) form img {
+    position: relative;
     width: 2.5em;
+    bottom: 3.5em;
+    left: 20em;
 }
 
-/* Grootte van de foto's van de slider */
-body header ul:nth-of-type(1) li figure img {
-    width: 140%;
-    overflow: hidden;
+/* de opmaak van de drie buttons van "dames", "heren" en "kinderen" */
+body #index nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1),
+body #index nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2),
+body #index nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgb(29, 46, 93);
+    background-color: rgb(244, 244, 244);
+    padding: 1.5em 0em 1.5em 1em;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.1em;
+    width: 90%;
 }
 
-/* Elementen om de slider te maken */
-header section:nth-of-type(1) ul:nth-of-type(1) {
+/* de opmaak van de pijltjes naast de "dames", "heren" en "kinderen" */
+body #index nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(1) img,
+body #index nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(2) img,
+body #index nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) img {
+    position: relative;
+    width: 1.1em;
+    top: 0.4em;
+}
+
+/* opmaak van de titel "ontdekken" */
+body #index nav:nth-of-type(2) ul:nth-of-type(3) h4 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgb(29, 46, 93);
+}
+
+/* de opmaak van "tommy jeans" en "sale" */
+body #index nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(1),
+body #index nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(2) {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(29, 46, 93);
+}
+
+/* de positionering van het pijltje naast "tommy jeans" */
+body header nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(1) img {
+    position: relative;
+    width: 2.1em;
+    top: 0.5em;
+    left: 13em;
+}
+
+/* de positionering van het pijltje naast "sale" */
+body #index nav:nth-of-type(2) ul:nth-of-type(3) li:nth-of-type(2) img {
+    width: 2.1em;
+    position: relative;
+    top: 0.5em;
+    left: 17.6em;
+}
+
+/* de opmaak van "winkels" waarbij er meer witruimte is tussen "sale" en "winkels" */
+body #index nav:nth-of-type(2) ul:nth-of-type(4) li:nth-of-type(1) {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(29, 46, 93);
+    margin-bottom: 0.5em;
+    margin-top: 3em;
+}
+
+/* de opmaak van "klantenservice" en "aanmelden" */
+body #index nav:nth-of-type(2) ul:nth-of-type(4) li:nth-of-type(2),
+body #index nav:nth-of-type(2) ul:nth-of-type(4) li:nth-of-type(3) {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(29, 46, 93);
+    margin-bottom: 0.5em;
+}
+
+/* de tekst in vlakken: "dames", "heren" en "kinderen" */
+body #index ul:nth-of-type(2) li a {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: rgb(29, 46, 93);
+    right: 7em;
+    top: 2.5em;
+}
+
+/* de animatie waarbij de het scherm van het hamburgermenu vertraagd wordt wanneer je op de button klikt */
+.active {
+    left: 0 !important;
+    transition: .5s;
+}
+
+/**/
+/* de styling van de tweede navigatie met een horizontale scrolbar met foto's, waarbij gebruikt wordt gemaakt van een unorderdlist met daarin een figure, foto's en een figcaption */
+/**/
+
+/* de foto's naast elkaar plaatsen en de horizontale scrolbar maken */
+body header section:nth-of-type(1) ul:nth-of-type(1) {
     display: flex;
     overflow-x: scroll;
-    position: relative;
-    top: -3.5em;
 }
 
-/* De slider meer naar links centreren en flex-shrink voor ..... */
-header section:nth-of-type(1) ul:nth-of-type(1) li {
+/* de slider meer naar links centreren*/
+body header section:nth-of-type(1) ul:nth-of-type(1) li {
     margin-left: -3em;
     flex-shrink: 0;
 }
 
-/* De foto's dichter naar elkaar toe zetten */
-header section:nth-of-type(1) ul:nth-of-type(1) figure {
+/* de foto's dichter naar elkaar toe zetten */
+body header section:nth-of-type(1) ul:nth-of-type(1) li figure {
     position: relative;
     right: 1.6em;
-    width: 4em;
+    width: 5em;
 }
 
-/* De grootte van het onderschrift */
-header section:nth-of-type(1) ul figcaption {
+/* de grootte van de foto's van de slider */
+body header section:nth-of-type(1) ul:nth-of-type(1) li figure img {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* De opmaak van de alle tekst onder de foto's */
+body header section:nth-of-type(1) ul:nth-of-type(1) li figcaption {
     font-size: 0.6em;
     text-transform: uppercase;
     text-align: center;
     font-weight: 900;
+    color: rgb(0, 23, 78);
 }
+
+/**/
+/* de styling van de eerste foto op de indexpagina die meeschaalt wanneer de pagina responsive wordt. dit gedeelte bestaat uit een foto, titel, een tekst en een button */
+/**/
 
 /* de maximale grootte van de foto aangeven */
 body main section:nth-of-type(1) img {
@@ -102,66 +283,63 @@ body main section:nth-of-type(1) img {
     z-index: 10;
 }
 
-/* titel regel 1 aanpassen */
+/* de opmaak van de titel "girls' night in" */
+body main section:nth-of-type(1) h3 {
+    position: absolute;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    left: 2em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-weight: 900;
+    z-index: 10;
+}
+
+/* de positionering van de titel "girls'" */
 body main section:nth-of-type(1) h3:nth-of-type(1) {
-    position: absolute;
-    bottom: 10em;
-    font-size: 1.2em;
-    color: white;
-    left: 2em;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    font-weight: 900;
-    z-index: 10;
+    bottom: 19.5em;
 }
 
-/* titel regel 2 aanpassen */
+/* de positionering van de titel "night in" */
 body main section:nth-of-type(1) h3:nth-of-type(2) {
-    position: absolute;
-    bottom: 8.5em;
-    font-size: 1.2em;
-    color: white;
-    left: 2em;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    font-weight: 900;
-    z-index: 10;
+    bottom: 18em;
 }
 
-/* ondertekst aanpassingen */
-body main section:nth-of-type(1) p {
+/* de opmaak en posiionering van de ondertekst */
+body main section:nth-of-type(1) p:nth-of-type(1) {
     position: absolute;
     font-size: 0.7em;
-    bottom: 10em;
-    color: white;
+    bottom: 25em;
+    color: rgb(255, 255, 255);
     left: 3.5em;
     line-height: 1.5em;
     font-weight: 500;
     z-index: 10;
-    max-width: 25em;
+    max-width: 20em;
 }
 
+/* de opmaak en positionering van de button "shop holiday looks" */
 body main section:nth-of-type(1) a {
-    position: absolute;
-    color: black;
+    position: relative;
+    color: rgb(0, 0, 0);
     font-size: 0.6em;
     bottom: 8em;
     left: 3.5em;
     right: 12em;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 1.2em;
     border-radius: 0.5em;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     text-align: center;
-    z-index: 10;
 }
 
-body main section:nth-of-type(2) img {
-    width: 100%;
-}
+/**/
+/* de styling voor de vier content foto's/butttons, waarbij gebruik gemaakt wordt van een unorderdlist met daarin li'tjes, foto's en buttons */
+/**/
 
+/* wanneer de pagina responsive wordt gaan de foto's naast elkaar komen te staan */
 body main section:nth-of-type(2) ul {
     display: flex;
     flex-wrap: wrap;
@@ -173,7 +351,8 @@ body main section:nth-of-type(2) li:nth-of-type(1) {
     flex-basis: 100%;
 }
 
-body main section:nth-of-type(2) li:nth-of-type(2), body main section:nth-of-type(2) li:nth-of-type(3) {
+body main section:nth-of-type(2) li:nth-of-type(2),
+body main section:nth-of-type(2) li:nth-of-type(3) {
     flex-basis: 49%;
 }
 
@@ -181,70 +360,95 @@ body main section:nth-of-type(2) li {
     position: relative;
 }
 
-body main section:nth-of-type(2) h4 {
+/* alle foto's nemen de grootte aan van 100%, dus de hele pagina */
+body main section:nth-of-type(2) img {
+    width: 100%;
+}
+
+/* de opmaak van de titels "holiday looks", "partyschoenen", "party tassen" en "cadeaus voor haar" */
+body main section:nth-of-type(2) ul li a h4 {
     position: absolute;
     bottom: 1em;
-    color: white;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     bottom: -0.5em;
     font-weight: 900;
     justify-content: center;
+    text-align: center;
 }
 
+/* de positionering van de titel "holiday looks" */
 body main section:nth-of-type(2) ul li:nth-of-type(1) a h4 {
     right: 30%;
     left: 30%;
 }
 
-body main section:nth-of-type(2) ul li:nth-of-type(2) a h4, body main section:nth-of-type(2) ul li:nth-of-type(3) a h4  {
+/* de positionering van "partyschoenen" en "party tassen" */
+body main section:nth-of-type(2) ul li:nth-of-type(2) a h4,
+body main section:nth-of-type(2) ul li:nth-of-type(3) a h4 {
     right: 10%;
     left: 10%;
 }
 
+/* de postionering van "cadeaus voor haar" */
 body main section:nth-of-type(2) ul li:nth-of-type(4) a h4 {
     right: 20%;
     left: 20%;
 }
 
-body main section:nth-of-type(3) {
-    position: relative;
-    top: 0.1em;
+/* de titel die pas bij minimaal 600px tevoorschijn komt */
+body main.index section:nth-of-type(2) h3 {
+    display: none;
 }
 
+/**/
+/* de styling van de balk "hilfiger collection" waarbij gebruikt wordt gemaakt van een foto, titel, ondertekst en buttons */
+/**/
+
+/* de grootte van de foto */
+body main section:nth-of-type(3) img {
+    max-width: 300%;
+}
+
+/* de opmaak van de titels "hilfiger" en "collection" */
 body main section:nth-of-type(3) h3 {
     position: relative;
     right: -2em;
     text-transform: uppercase;
     font-size: 1.1em;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
+/* de positionering van de titel "hilfiger" */
 body main section:nth-of-type(3) h3:nth-of-type(1) {
     bottom: 14em;
 }
 
+/* de positionering van de titel "collection" */
 body main section:nth-of-type(3) h3:nth-of-type(2) {
     bottom: 14.5em;
 }
 
+/* de opmaak en postionering van de ondertekst */
 body main section:nth-of-type(3) p {
     position: relative;
     bottom: 20.5em;
     left: 2em;
     font-size: 0.8em;
-    color: white;
+    color: rgb(255, 255, 255);
     left: 2.7em;
     line-height: 1.5em;
     font-weight: 500;
     max-width: 20em;
 }
 
+/* de opmaak van de buttons "shop de collectie" en "shop jassen en jacks" */
 body main section:nth-of-type(3).collectie a {
-    color: black;
+    color: rgb(0, 0, 0);
     position: relative;
     font-size: 0.6em;
     right: 12em;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 1.2em;
     border-radius: 0.5em;
     font-weight: 800;
@@ -253,29 +457,29 @@ body main section:nth-of-type(3).collectie a {
     text-align: center;
 }
 
+/* de positionering van de button "shop de collectie" */
 body main section:nth-of-type(3) a:nth-of-type(1) {
     bottom: 27em;
     left: 3.5em;
 }
 
+/* de positionering van de button "shop jassen en jacks" */
 body main section:nth-of-type(3) a:nth-of-type(2) {
     bottom: 23em;
     left: -13em;
 }
 
+/**/
+/* de styling van de twee foto's "jurken" en "sneakers" naast elkaar waar gebruik wordt gemaakt van een ul-structuur met foto's en titels */
+/**/
+
+/* de positionering van de foto's op de index pagina */
 body main section:nth-of-type(4) {
     position: relative;
     bottom: 11.5em;
 }
 
-body main section:nth-of-type(4) img {
-    width: 100%;
-}
-
-body main section:nth-of-type(4) li {
-    position: relative;
-}
-
+/* wanneer de pagina responsive wordt, blijven de foto's naast elkaar staan */
 body main section:nth-of-type(4) ul {
     display: flex;
     flex-wrap: wrap;
@@ -283,36 +487,40 @@ body main section:nth-of-type(4) ul {
     justify-content: space-between;
 }
 
-body main section:nth-of-type(4) li:nth-of-type(1), body main section:nth-of-type(4) li:nth-of-type(2) {
+/* de postionering van de titels in de foto's */
+body main section:nth-of-type(4) li {
+    position: relative;
+}
+
+/* de foto's staan voor 50% aan beide kanten van de index pagina */
+body main section:nth-of-type(4) li:nth-of-type(1),
+body main section:nth-of-type(4) li:nth-of-type(2) {
     flex-basis: 49%;
 }
 
+/* de grootte van de foto's waarbij ze volledig worden weergegeven */
+body main section:nth-of-type(4) img {
+    width: 100%;
+}
+
+/* de opmaak en positionering van de titels */
 body main section:nth-of-type(4) h4 {
     position: absolute;
     bottom: 1em;
-    color: white;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     bottom: -0.8em;
     font-weight: 900;
     justify-content: center;
-    left: 25%;
+    left: 40%;
 }
 
-body main section:nth-of-type(5) ol {
-    display: flex;
-    list-style-type: none;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
-}
+/**/
+/* de styling van de "meer catergorieen" balk op de index pagina. Hier wordt gebruik gemaakt van een titel en een unorderd list met content erin dat moet fungeren als buttos */
+/**/
 
-body main section:nth-of-type(5) li {
-    display: flex;
-    flex-basis: 50%;
-}
-
-/* achtergrond kleur section */
-body main section:nth-of-type(5) {
+/* de achtergrondkleur van de section, dus de donkerblauwe kleur */
+body main section:nth-of-type(5).categorie {
     position: relative;
     background-color: rgb(0, 23, 78);
     padding-top: 2em;
@@ -322,15 +530,32 @@ body main section:nth-of-type(5) {
     bottom: 11.5em;
 }
 
-body main section:nth-of-type(5) h2 {
-    color: white;
+/* de opmaak van de titel */
+body main section:nth-of-type(5).categorie h2 {
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 0.8em;
 }
 
-body main section:nth-of-type(5) a {
-    color: white;
-    border: white solid 0.2em;
+/* wanneer de pagina responsive wordt, blijven de buttons naast elkaar staan */
+body main section:nth-of-type(5).categorie ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/* de buttons staan voor 50% aan beide kanten van de index pagina en blijven ook zo staan wanneer de pagina responsive wordt */
+body main section:nth-of-type(5).categorie li {
+    display: flex;
+    flex-basis: 50%;
+}
+
+/* de opmaak van de buttons, dus een witte border om de buttons */
+body main section:nth-of-type(5).categorie a {
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) solid 0.2em;
     padding: 0.5em;
     margin: 0.2em;
     text-transform: uppercase;
@@ -340,54 +565,67 @@ body main section:nth-of-type(5) a {
     text-align: center;
 }
 
-/* slider 2.0 */
+/**/
+/* de styling van de horizontale scrolbar "ontdek meer" waar gebruik wordt gemaakt van een navigatie met daarin een titel, een unorderdlist met figures en figcaptions én een button */
+/**/
+
+/* de positionering van de slider op de index pagina */
 body main section:nth-of-type(6) {
     position: relative;
     bottom: 10em;
 }
 
+/* de opmaak van de titel "ontdek meer" */
 body main section:nth-of-type(6) h2 {
     font-size: 1.4em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    margin-left: 0.5em;
+    color: rgb(0, 23, 78);
 }
 
+/* wanneer de pagina responsive wordt, blijven de foto's naast elkaar staan */
 body main section:nth-of-type(6) ul {
     display: flex;
     overflow-x: scroll;
-    margin-left: -2em;
+    margin-left: -4em;
 }
 
-body main section:nth-of-type(6) li {
+/* de ruimte tussen de foto's in de slider */
+body main section:nth-of-type(6) ul li {
     margin: 0.2em;
 }
 
-body main section:nth-of-type(6) img {
-    flex-shrink: 0;
-    background-color: green;
+/* de grootte van de foto's in de slider */
+body main section:nth-of-type(6) ul li figure img {
     max-width: 20em;
 }
 
-body main section:nth-of-type(6) h3 {
+/* de opmaak van de titel */
+body main section:nth-of-type(6) ul li figure figcaption h3 {
     position: relative;
     font-size: 0.8em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    color: rgb(0, 23, 78);
     left: 25%;
 }
 
-body main section:nth-of-type(6) p {
+/* de opmaak van de ondertekst */
+body main section:nth-of-type(6) ul li figure figcaption p {
     font-size: 0.8em;
     max-width: 19em;
     margin-left: 3em;
+    color: rgb(0, 23, 78);
 }
 
-body main section:nth-of-type(6) a {
+/* de opmaak en positionering van de button "shop nu" */
+body main section:nth-of-type(6) ul li figure figcaption a {
     position: relative;
-    color: black;
+    color: rgb(0, 23, 78);
     font-size: 0.8em;
-    border: 0.2em solid black;
-    background-color: white;
+    border: 0.2em solid rgb(0, 23, 78);
+    background-color: rgb(255, 255, 255);
     padding-left: 8em;
     padding-right: 8em;
     padding-top: 1em;
@@ -401,110 +639,135 @@ body main section:nth-of-type(6) a {
     top: 1em;
 }
 
-/* jouw Tommy stijl */
+/**/
+/* de styling van de zes foto's onder elkaar die naast elkaar komen te staan wanneer de pagina responsive wordt */
+/**/
+
+/* de positionering van de foto's op de index pagina en wanneer de pagina responsive wordt gaan de foto's naast elkaar staan */
 body main section:nth-of-type(7) {
     position: relative;
-    top: 3em;
+    bottom: 4em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+/* de opmaak en postionering van de titel "jouw tommyhilfiger stijl" */
 body main section:nth-of-type(7) h2 {
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 0.4em;
+    margin-left: 0.5em;
+    color: rgb(0, 23, 78);
 }
 
+/* de opmaak van de tekst onder de titel */
 body main section:nth-of-type(7) p:nth-of-type(1) {
     position: relative;
     font-size: 0.8em;
     line-height: 1.8em;
     bottom: 1.5em;
+    margin-left: 0.5em;
+    color: rgb(0, 23, 78);
 }
 
-body main section:nth-of-type(7) {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-body main section:nth-of-type(7) img {
+/* de grootte van de foto's zijn altijd maximaal */
+body main section:nth-of-type(7) ul li img {
     max-width: 100%;
 }
 
+/* de opmaak en positionering van de ondertekst "powerd by Olapic" */
 body main section:nth-of-type(7) p:nth-of-type(2) {
     position: relative;
     font-size: 0.7em;
     left: 35%;
 }
 
-body main article:nth-of-type(1) h2 {
+/**/
+/* de styling van de twee teksten waarbij gebruik wordt gemaakt van een titel en twee paragrafen met een link in de paragrafen */
+/**/
+
+/* de opmaak van de titel "tommy hilgifer dames" */
+body main section:nth-of-type(8) h2 {
     position: relative;
     font-size: 1.3em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    bottom: -4em;
-    text-align: center;
+    color: rgb(0, 23, 78);
+    left: 0.5em;
 }
 
-body main article:nth-of-type(1) p {
+/* de opmaak van de paragrafen */
+body main section:nth-of-type(8) p {
     position: relative;
-    bottom: -6em;
     max-width: 30em;
     padding-left: 1em;
     padding-right: 1em;
     line-height: 1.5em;
     font-size: 0.8em;
+    color: rgb(143, 143, 143);
 }
 
-body main article:nth-of-type(1) a {
+/* de woorden met een linkje, die in de teksten staan, een streepje meegeven */
+body main section:nth-of-type(8) a {
     text-decoration: underline;
 }
 
-body main  article:nth-of-type(1) p:nth-of-type(2) {
-    padding-bottom: 5em;
-}
 
-/* Opmaak footer */
+/**/
+/* de styling van het eerste deel van de footer waarbij je je mail in kan vullen. Dit gedeelte bestaat uit een titel, een tekstje en een input waarbij je je mail kan invullen */
+/**/
+
+/* de opmaak van de achtergrond van de footer, dus de donkerblauwe kleur */
 body footer section:nth-of-type(1) {
+    position: relative;
     background-color: rgb(0, 23, 78);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
+/* de opmaak van de titel "ontvang de laatste nieuwtjes" */
 body footer section:nth-of-type(1) h2 {
     position: relative;
     text-transform: uppercase;
     font-size: 1.2em;
-    color: white;
+    color: rgb(255, 255, 255);
     padding-top: 1em;
     padding-left: 0.65em;
     letter-spacing: 0.1em;
 }
 
+/* de opmaak van de tekst onder de titel */
 body footer section:nth-of-type(1) p {
     position: relative;
     font-size: 0.8em;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 1em;
     bottom: 1em;
     font-weight: 300;
     letter-spacing: 0.1em;
 }
 
+/* de opmaak van de input */
 body footer section:nth-of-type(1) input {
     position: relative;
     padding: 1em;
     width: 20em;
-    border: 0.2em solid rgb(244,244,244);
+    border: 0.2em solid rgb(244, 244, 244);
     margin: 2.2em;
     bottom: 4em;
 }
 
-/* uitklap footer */
+/**/
+/* de styling van het tweede deel van de footer waarbij je via dropdowns meer linkjes krijgt naar bepaalde elementen in de website. hier wordt gebruik gemaakt van details en summary's om de dropdowns te maken en linkjes in de details */
+/**/
+
+/* de achtergrond van het tweede deel, dus de rode achtergrondkleur */
 body footer section:nth-of-type(2) {
     position: relative;
     background-color: rgb(204, 12, 47);
-    color: white;
-    bottom: 3.5em;
+    color: rgb(255, 255, 255);
 }
 
+/* de opmaak van de dropdowns */
 body footer section:nth-of-type(2) details {
     font-size: 0.7em;
     padding: 1em;
@@ -512,6 +775,7 @@ body footer section:nth-of-type(2) details {
     font-weight: 800;
 }
 
+/* de eerste dropdown een stukje naar beneden plaatsen waardoor er meer witruimte komt */
 body footer section:nth-of-type(2) details:nth-of-type(1) {
     padding-top: 2em;
 }
@@ -520,151 +784,941 @@ body footer section:nth-of-type(2) details:nth-of-type(1) {
 
 
 
+/**/
+/* de detailpagina */
+/**/
 
-/* Detail pagina */
+/**/
+/* de styling van de navigatie waarbij gebruik wordt gemaakt van een nav, unorderdlist, foto's en een titel */
+/**/
+
+/* de opmaak en positionering van de titel "sweatshirts en hoodies" waarbij de titel een donkerblauwe achtergrond heeft */
 body header h2 {
     position: relative;
     background-color: rgb(29, 46, 93);
-    color: white;
+    color: rgb(255, 255, 255);
     padding-top: 1em;
     padding-bottom: 1em;
-    bottom: 4em;
+    bottom: 2em;
     font-size: 0.7em;
     text-align: center;
 }
 
-body main section:nth-of-type(1) .slider {
+/**/
+/* de styling van de horizontale scrolbar waarbij verschillende foto's worden laten zien. deze scrolbar bestaat uit een nav en ul-structuur met foto's */
+/**/
+
+/* de positionering van de slider op de detailpagina */
+body main.detail section:nth-of-type(1) {
     position: relative;
-    margin-left: -3em;
-    bottom: 3em;
 }
 
-body main section:nth-of-type(1) nav ul {
+/* de opmaak van de slider waarbij wordt aangegeven om horizontaal te scrollen */
+body main.detail section:nth-of-type(1) nav ul {
     display: flex;
     overflow-x: scroll;
+    border-bottom: 10px solid rgb(78, 171, 78);
 }
 
-body main section:nth-of-type(1) nav ul li img {
+/* een kleine ruimte tussen de foto's */
+body main.detail section:nth-of-type(1) ul li {
+    margin: 0.2em;
+}
+
+/* de opmaak van de foto's, dus de grootte van de foto's */
+body main.detail section:nth-of-type(1) nav:nth-of-type(1) ul li img {
     flex-shrink: 0;
     max-width: 20em;
 }
 
-body main section:nth-of-type(1) li {
-    margin: 0.2em;
-}
-
-body main section:nth-of-type(2) .th {
+/* de opmaak en positionering van "Curve" in het donkerblauwe vlak in foto */
+body main.detail section:nth-of-type(1) p:nth-of-type(1) {
     position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    left: 4em;
     font-size: 0.8em;
-    color: rgb(0, 23, 78);
     text-transform: uppercase;
-    font-weight: 600;
-    bottom: 0.5em;
+    bottom: 4.5em;
+    background-color: rgb(29, 46, 93, 0.9);
+    width: 5em;
+    text-align: center;
+    padding: 0.5em;
 }
 
-body main section:nth-of-type(2) h3 {
+/**/
+/* de styling van de titel en informatie over de trui, waarbij gebruik wordt gemaakt van titels, spans met informatie, buttons, foto's en een orderdlist */
+/**/
+
+/* de opmaak van de titel van de trui */
+body main.detail section:nth-of-type(2) h3 {
     position: relative;
     color: rgb(185, 40, 52);
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-weight: 900;
-    bottom: 0.5em;
+    bottom: 2.8em;
     line-height: 1.3em;
+    margin-left: 0.4em;
+    font-size: 1.3em;
 }
 
-body main section:nth-of-type(2) span:nth-of-type(1) {
+/* de prijs, BTW en kleuren naast elkaar laten staan */
+body main.detail section:nth-of-type(2) span:nth-of-type(1),
+body main.detail section:nth-of-type(2) span:nth-of-type(2),
+body main.detail section:nth-of-type(2) span:nth-of-type(3),
+body main.detail section:nth-of-type(2) span:nth-of-type(4) {
     display: flex;
 }
 
-body main section:nth-of-type(2) span:nth-of-type(1) p:nth-of-type(1) {
+/* de opmaak van de prijs */
+body main.detail section:nth-of-type(2) span:nth-of-type(1) {
     font-weight: 900;
     color: rgb(0, 23, 78);
     position: relative;
-    bottom: 1.2em;
+    bottom: 4.5em;
     font-size: 1em;
+    margin-left: 0.5em;
 }
 
-body main section:nth-of-type(2) span:nth-of-type(1) p:nth-of-type(2) {
+/* de opmaak van de BTW */
+body main.detail section:nth-of-type(2) span:nth-of-type(2) {
+    position: absolute;
     font-weight: 200;
-    color: grey;
+    color: rgb(150, 150, 150);
     position: relative;
-    bottom: 1.2em;
+    bottom: 7em;
     font-size: 0.8em;
-    left: 0.75em;
+    padding-left: 6em;
 }
 
-body main section:nth-of-type(2) span:nth-of-type(2) {
-    display: flex;
-}
-
-
-body main section:nth-of-type(2) span:nth-of-type(2) p:nth-of-type(1) {
+/* de opmaak van de kleur */
+body main.detail section:nth-of-type(2) span:nth-of-type(3) {
     font-weight: 200;
-    color: grey;
+    color: rgb(150, 150, 150);
     position: relative;
-    bottom: 1.2em;
+    bottom: 6em;
     font-size: 0.8em;
-    bottom: 2.5em;
+    margin-left: 0.5em;
 }
 
-body main section:nth-of-type(2) span:nth-of-type(2) p:nth-of-type(2) {
-    position: relative;
+/* de opmaak van de kleur "light grey" */
+body main.detail section:nth-of-type(2) span:nth-of-type(4) {
+    position: absolute;
     font-weight: 400;
     color: rgb(0, 23, 78);
     position: relative;
-    bottom: 1.2em;
+    bottom: 7.1em;
     font-size: 0.8em;
-    left: 0.75em;
-    bottom: 2.5em;
+    left: 4em;
 }
 
-body main section:nth-of-type(3) {
+/* de opmaak van de twee cirkels: foto's van de truien, dus voor de kleur*/
+body main.detail section:nth-of-type(3) {
     position: relative;
-    top: -2em;
+    bottom: 5.3em;
+    margin-left: 0.5em;
 }
 
-body main section:nth-of-type(3) a img {
+/* de opmaak voor van de cirkels*/
+body main.detail section:nth-of-type(3) a img {
     border-radius: 50%;
-    max-width: 20%;
+    max-width: 17%;
 }
 
-body main section:nth-of-type(4).maten {
+/* de opmaak voor de "maat" */
+body main.detail section:nth-of-type(4) p {
+    position: relative;
+    font-weight: 200;
+    color: rgb(150, 150, 150);
+    top: 7em;
+    font-size: 0.8em;
+    margin-left: 0.5em;
+}
+
+/* wanneer de pagina responsive wordt, blijven de buttons voor maat naast elkaar staan */
+body main.detail section:nth-of-type(4) ol {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
+    bottom: 1em;
 }
 
-body main section:nth-of-type(4).maten p {
-    position: absolute;
-    top: 10em;
-}
-
-body main section:nth-of-type(4).maten a {
-    position: relative;
-    top: 13em;
-    color: black;
-    font-size: 1em;
-    border: 0.1em solid black;
-    background-color: white;
-    padding-left: 3em;
-    width: 3em;
+/* de opmaak van de maten buttons waarbij de buttons 50% van het scherm innemen */
+body main.detail section:nth-of-type(4) ol li {
     display: flex;
+    flex-basis: 50%;
 }
 
-body main section:nth-of-type(5).extra_info {
-    background-color: red;
+/* de opmaak van de linkjes in de buttons voor de maat */
+body main.detail section:nth-of-type(4) ol li a {
+    position: relative;
+    top: 7em;
+    border: 0.1em solid rgb(0, 0, 0);
+    width: 3em;
+    color: rgb(0, 23, 78);
+    border: rgb(150, 150, 150) solid 0.1em;
+    padding: 0.5em;
+    margin: 0.5em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 300;
+    flex-grow: 1;
+    text-align: center;
 }
 
-body main section:nth-of-type(6).slider_2 {
-    background-color: red;
+/* de opmaak van de button voor de maattabel */
+body main.detail section:nth-of-type(5) a:nth-of-type(1) {
+    position: relative;
+    display: flex;
+    color: rgb(0, 23, 78);
+    border: rgb(150, 150, 150) solid 0.1em;
+    padding: 0.5em;
+    margin-right: 10.1em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 300;
+    flex-grow: 1;
+    text-align: center;
+    bottom: 10em;
+    margin-left: 0.5em;
 }
 
+/* de opmaak van de button "toevoegen" */
+body main.detail section:nth-of-type(5) a:nth-of-type(2) {
+    position: relative;
+    display: flex;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    margin: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    font-weight: 900;
+    background-color: rgb(88, 186, 135);
+    bottom: 9.5em;
+    margin-right: 4em;
+    margin-left: 0.5em;
+    width: 50%;
+}
 
+/* het icoon voor het toevoegen favorieten, het hartje */
+body main.detail section:nth-of-type(5) img {
+    position: relative;
+    left: 60%;
+    width: 2.6em;
+    bottom: 10.6em;
+}
 
+/**/
+/* de styling van het meer informatie over het product onder de groene button, waarbij gebruik wordt gemaakt van foto's en een tekst */
+/**/
 
+/* wanneer de pagina responsive wordt blijft het icoon van "gratis bezorgen" en de tekst naast elkaar staan */
+body main.detail section:nth-of-type(6) {
+    position: relative;
+    display: flex;
+    left: 0.5em;
+}
 
+/* het icoon van "gratis bezorgen" */
+body main.detail section:nth-of-type(6) img {
+    width: 2em;
+}
 
+/* de opmaak voor de tekst "gratis bezorgen" */
+body main.detail section:nth-of-type(6) p {
+    position: relative;
+    font-size: 0.8em;
+    background-color: rgb(249, 249, 249);
+    margin: 0;
+    padding-left: 2em;
+    text-align: left;
+    padding-right: 2em;
+    color: rgb(0, 23, 78);
+}
 
+/* wanneer de pagina responsive wordt blijft het icoon van "gratis retourneren" en de tekst naast elkaar staan */
+body main.detail section:nth-of-type(7) {
+    position: relative;
+    display: flex;
+    left: 0.5em;
+    bottom: 8em;
+}
 
+/* het icoon van "gratis bezorgen" en de positionering */
+body main.detail section:nth-of-type(7) img {
+    position: relative;
+    bottom: 1.3em;
+    width: 2em;
+}
 
+/* de opmaak voor de tekst "gratis retourneren" */
+body main.detail section:nth-of-type(7) p {
+    position: relative;
+    font-size: 0.8em;
+    background-color: rgb(249, 249, 249);
+    margin: 0;
+    padding-left: 2em;
+    text-align: left;
+    padding-right: 2em;
+    color: rgb(0, 23, 78);
+}
+
+/* de opmaak voor de tekst "meer maten" */
+body main.detail section:nth-of-type(8) {
+    background-color: rgb(249, 249, 249);
+    padding: 0.5em 1em 0.5em 1em;
+    position: relative;
+    bottom: 8.5em;
+}
+
+/* de opmaak voor de link in de tekst "meer maten" waarbij een lijntje onder het woord komt te staan */
+body main.detail section:nth-of-type(8) a {
+    text-decoration: underline;
+    color: rgb(143, 143, 143);
+}
+
+/**/
+/* de styling van meer informatie over het product onder de tekst van gratis bezorging/retourneren over de specificaties, sustainable style en verzending en retouren, waarbij gebruik wordt gemaakt van een titel, div voor de streepjes en tekst */
+/**/
+
+/* de opmaak en positionering van titel "specificaties" */
+body main.detail section:nth-of-type(9) h3 {
+    position: relative;
+    color: rgb(0, 23, 78);
+    text-transform: uppercase;
+    font-weight: 900;
+    bottom: 12em;
+    font-size: 0.7em;
+    margin-left: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+/* de opmaak en positionering van het lijntje onder "specificaties" */
+body main.detail section:nth-of-type(9) div {
+    position: relative;
+    border-bottom: 0.4em solid rgb(0, 23, 78);
+    bottom: 8.7em;
+    width: 6.5em;
+}
+
+/* de opmaak en positionering van titel "sustainable style" */
+body main.detail section:nth-of-type(10) h3:nth-of-type(1) {
+    position: relative;
+    color: rgb(78, 171, 78);
+    text-transform: uppercase;
+    font-weight: 900;
+    bottom: 10em;
+    font-size: 0.7em;
+    margin-left: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+/* de opmaak en positionering van het lijntje onder "sustainable style" */
+body main.detail section:nth-of-type(10) div {
+    position: relative;
+    border-bottom: 0.4em solid rgb(78, 171, 78);
+    bottom: 7.3em;
+    width: 9em;
+}
+
+/* de opmaak van het icoon bij "sustainable style" */
+body main.detail section:nth-of-type(10) img {
+    position: relative;
+    display: flex;
+    width: 3em;
+    bottom: 7em;
+}
+
+/* de opmaak van de titel "biologisch katoen" */
+body main.detail section:nth-of-type(10) h3:nth-of-type(2) {
+    text-transform: uppercase;
+    position: relative;
+    color: rgb(0, 23, 78);
+    text-transform: uppercase;
+    font-weight: 900;
+    bottom: 12em;
+    font-size: 0.9em;
+    margin-left: 4.5em;
+    letter-spacing: 0.1em;
+}
+
+/* de opmaak van de tekst van "biologisch katoen" */
+body main.detail section:nth-of-type(10) p {
+    position: relative;
+    color: rgb(0, 23, 78);
+    font-size: 0.8em;
+    line-height: 1.8em;
+    padding: 0.5em;
+    bottom: 14.5em;
+    margin-left: 4.5em;
+}
+
+/* de opmaak en positionering van titel "verzenden en retouren" */
+body main.detail section:nth-of-type(11) h3 {
+    position: relative;
+    color: rgb(0, 23, 78);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.7em;
+    margin-left: 0.5em;
+    letter-spacing: 0.1em;
+    bottom: 16em;
+}
+
+/* de opmaak en positionering van het lijntje onder "verzenden en retouren" */
+body main.detail section:nth-of-type(11) div:nth-of-type(1) {
+    position: relative;
+    border-bottom: 0.4em solid rgb(0, 23, 78);
+    bottom: 11.5em;
+    width: 11.7em;
+}
+
+/**/
+/* de styling van "recent bekeken", waarbij gebruik wordt gemaakt van een titel, figure, foto en figcaption */
+/**/
+
+/* de opmaak en positionering van het vlak van "recent bekeken" */
+body main.detail section:nth-of-type(12) {
+    position: absolute;
+    background-color: rgb(244, 244, 244);
+    top: 92em;
+}
+
+/* de opmaak van de titel "recent bekeken" */
+body main.detail section:nth-of-type(12) h2 {
+    position: relative;
+    color: rgb(0, 23, 78);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+    top: 1em;
+    left: 0.5em;
+}
+
+/* de opmaak van het vlak, dus de witte achtergrond */
+body main.detail section:nth-of-type(12) figure {
+    background-color: rgb(255, 255, 255);
+    padding: 1.5em;
+    padding-bottom: 2em;
+}
+
+/* de grootte van de foto, dus altijd 100% = volledige grootte */
+body main.detail section:nth-of-type(12) img {
+    width: 100%;
+}
+
+/* de opmaak van de titel onder de foto */
+body main.detail section:nth-of-type(12) figcaption:nth-of-type(1) {
+    color: rgb(0, 23, 78);
+    text-transform: uppercase;
+    font-weight: 900;
+    bottom: 5em;
+    font-size: 0.7em;
+    margin-left: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+/* de andere drie foto's staan uit omdat deze worden laten zien vanaf 600px */
+body main.detail section:nth-of-type(12) figure:nth-of-type(2),
+body main.detail section:nth-of-type(12) figure:nth-of-type(3),
+body main.detail section:nth-of-type(12) figure:nth-of-type(4) {
+    display: none;
+}
+
+body header nav:nth-of-type(1) form {
+    display: none;
+}
+
+/**/
+/* de styling van de footer dat een stukje naar beneden moet worden geplaatst */
+/**/
+
+/* de footer een stuk naar beneden */
+body footer.fdetail {
+    position: relative;
+    top: 42em;
+    width: 100%;
+}
+
+/**/
+/* de styling van de pagina's wanneer de pagina's responsive worden vanaf minimaal 600px */
+/**/
+
+@media (min-width:600px) {
+    /**/
+    /* indexpagina */
+    /**/
+
+    /* de positionering van het grote Tommy Hilfiger logo */
+    body #index nav:nth-of-type(1) ul:nth-of-type(2) li {
+        left: 1em;
+        position: absolute;
+        transform: translate(0, -50%);
+    }
+
+    /* het hamburgermenu weglaten */
+    #index nav:nth-of-type(1) ul:nth-of-type(1) img:nth-of-type(1) {
+        display: none;
+    }
+
+    /* het kleine Tommy Hilfiger logo weglaten */
+    #index nav:nth-of-type(1) ul:nth-of-type(2) img:nth-of-type(1) {
+        display: none;
+    }
+
+    /* het grote logo tevoorschijn halen en inline zetten */
+    header#index nav:nth-of-type(1) ul:nth-of-type(2) li img:nth-of-type(2) {
+        display: inline;
+    }
+
+    /* de zoekform inline zetten en in het midden van het scherm positioneren */
+    header#index nav:nth-of-type(1) form {
+        display: inline;
+        margin: 0;
+        border: 0;
+        position: absolute;
+        left: 45%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    /* de positionering van de tekst in de zoekform */
+    header#index nav:nth-of-type(1) form p {
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+    }
+
+    /* de nieuwe link "aanmelden" inline zetten */
+    header#index nav:nth-of-type(1) ul:nth-of-type(3) li a {
+        display: inline;
+    }
+
+    /* het zoekicoon weglaten */
+    header#index nav:nth-of-type(1) ul:nth-of-type(3) li:nth-of-type(2) {
+        display: none;
+    }
+
+    /* de woorden niet meer in capslock maar eerste letter van het woord is hoofdletter */
+    header#index section:nth-of-type(1) ul li figure figcaption {
+        text-transform: capitalize;
+    }
+
+    /* de foto's van de tweede navigatie uitzetten */
+    header#index section ul li figure img {
+        display: none;
+    }
+
+    /* de tekst van de tweede navigatie in het midden van het scherm zetten */
+    header#index section ul {
+        justify-content: center;
+    }
+
+    /* de eerste foto op de indexpagina 100% laten meeschalen */
+    .index section:nth-of-type(1) img {
+        width: 100%;
+    }
+
+    /* de tekst van de eerste foto van de indexpagina netjes in de foto laten staan */
+    main.index section:nth-of-type(1) {
+        position: relative;
+    }
+
+    /* de titel "girls" van de eerste foto positioneren */
+    body main.index section:nth-of-type(1) h3:nth-of-type(1) {
+        top: 5%;
+    }
+
+    /* de titel "night in" van de eerste foto positioneren */
+    body main.index section:nth-of-type(1) h3:nth-of-type(2) {
+        top: 15%;
+    }
+
+    /* de tekst van de eerste foto positioneren */
+    body main.index section:nth-of-type(1) p {
+        top: 30%;
+    }
+
+    /* de volgorde van de vier foto's/content veranderen */
+    .index section:nth-of-type(2) ul li:nth-of-type(1) {
+        order: 1;
+    }
+
+    /* de volgorde van de vier foto's/content veranderen */
+    .index section:nth-of-type(2) ul li:nth-of-type(4) {
+        order: 1;
+    }
+
+    /* de grootte van de twee foto's "partyschoenen" en "partytassen" */
+    body main.index section:nth-of-type(2) ul li:nth-of-type(2) img,
+    body main.index section:nth-of-type(2) ul li:nth-of-type(3) img {
+        max-width: 98.8%;
+    }
+
+    /* de grootte van de foto cadeaus voor haar" */
+    body main.index section:nth-of-type(2) ul li:nth-of-type(4) img {
+        width: 100%;
+    }
+
+    /* de foto's van "jouw tommy hilfiger stijl" naast elkaar zetten */
+    body main.index section:nth-of-type(7) ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    /* de foto's komen per 3 naast elkaar met een beetje tussenruimte */
+    body main.index section:nth-of-type(7) li {
+        flex-basis: 30%;
+    }
+
+    /* de opmaak van de titel "shop per categorie" */
+    body main.index section:nth-of-type(2) h3 {
+        display: inline;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: rgb(0, 23, 78);
+        padding: 0;
+        margin: 0;
+        margin-left: 0.5em;
+    }
+
+    /* de opmaak van de tekst van tommy hilfiger dames, waarbij de paragrafen naast elkaar komen te staan*/
+    body main.index section:nth-of-type(8) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    /* de titel van "tommy hilfiger dames" */
+    body main.index section:nth-of-type(8) h2 {
+        flex-basis: 100%;
+    }
+
+    /* de opmaak van de titel "meer categorieen" */
+    body main.index section.categorie h2 {
+        font-size: 2em;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: white;
+    }
+
+    /* de opmaak van de titel "ontdek meer" */
+    body main section:nth-of-type(6) h2 {
+        font-size: 2em;
+        color: rgb(0, 23, 78);
+    }
+
+    /* de positionering van de tekst "powered by olapic" */
+    body main section:nth-of-type(7) p:nth-of-type(2) {
+        left: 80%;
+    }
+
+    /* de opmaak van het grote Tommy Hilfiger logo, deze wordt vanaf 600px weergegeven */
+    body #index nav:nth-of-type(1) ul:nth-of-type(2) li img:nth-of-type(2) {
+        width: 15em;
+        left: -17em;
+    }
+
+    /* de opmaak en positionering van de form, deze wordt vanaf 600px weergegeven */
+    body #index nav:nth-of-type(1) form p {
+        position: absolute;
+        background-color: rgb(244, 244, 244);
+        width: 35%;
+        color: rgb(202, 200, 200);
+        padding: 1em;
+        top: 1em;
+        font-size: 0.7em;
+        margin-left: -4em;
+    }
+
+    /**/
+    /* detail */
+    /**/
+
+    /* de blauwe balk naar witte balk voor titel "sweatshirt en hoodies" */
+    body header h2 {
+        background-color: white;
+        color: black;
+        text-align: left;
+        padding-left: 2em;
+        color: rgb(0, 23, 78);
+    }
+
+    /* de positionering van de titel "curve biologisch katoenen hoodie met logo" */
+    body main.detail section:nth-of-type(2) h3 {
+        bottom: 1.5em;
+    }
+
+    /* de opmaak voor de horizontale slider met foto's */
+    body main.detail section:nth-of-type(1) {
+        max-width: 50%;
+        overflow: hidden;
+        left: 50%;
+    }
+
+    /* de groene lijn onder de horizontale slider met foto's */
+    body main.detail section:nth-of-type(1) ul {
+        border-bottom: 10px solid rgb(78, 171, 78);
+        width: 20em;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* alle sections links centreren */
+    body main.detail section:nth-of-type(2),
+    body main.detail section:nth-of-type(3),
+    body main.detail section:nth-of-type(4),
+    body main.detail section:nth-of-type(5),
+    body main.detail section:nth-of-type(6),
+    body main.detail section:nth-of-type(7),
+    body main.detail section:nth-of-type(8),
+    body main.detail section:nth-of-type(9),
+    body main.detail section:nth-of-type(10),
+    body main.detail section:nth-of-type(11) {
+        max-width: 40%;
+    }
+
+    /* de titel positioneren */
+    body main.detail section:nth-of-type(2) {
+        margin-top: -30em;
+    }
+
+    /* alle content goed positioneren */
+    body main.detail section:nth-of-type(2) span:nth-of-type(1) {
+        bottom: 3em;
+    }
+
+    body main.detail section:nth-of-type(2) span:nth-of-type(2) {
+        bottom: 5em;
+    }
+
+    body main.detail section:nth-of-type(2) span:nth-of-type(3) {
+        bottom: 4em;
+    }
+
+    body main.detail section:nth-of-type(2) span:nth-of-type(4) {
+        bottom: 5em;
+    }
+
+    body main.detail section:nth-of-type(3) {
+        bottom: 3.5em;
+    }
+
+    body main.detail section:nth-of-type(4) p:nth-of-type(1) {
+        top: 10em;
+    }
+
+    body main.detail section:nth-of-type(4) ol {
+        top: 2em;
+    }
+
+    body main.detail section:nth-of-type(5) {
+        top: 3em;
+    }
+
+    body main.detail section:nth-of-type(8) {
+        top: -7em;
+    }
+
+    body main.detail section:nth-of-type(9) h3 {
+        bottom: 10em;
+    }
+
+    body main.detail section:nth-of-type(9) div {
+        bottom: 7.5em;
+    }
+
+    body main.detail section:nth-of-type(10) p {
+        margin-left: 4.5em;
+    }
+
+    /* de informatie over "gratis verzenden" en "gratis retouren" weglaten want deze is alleen zichtbaar op mobiel */
+    body main.detail section:nth-of-type(6),
+    body main.detail section:nth-of-type(7) {
+        display: none;
+    }
+
+    /* de opmaak van de foto's "recent bekeken" en het naast elkaar positioneren */
+    body main.detail section:nth-of-type(12) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        top: 65em;
+    }
+
+    /* de opmaak van de titel "recent bekeken" */
+    body main.detail section:nth-of-type(12) h2 {
+        flex-basis: 100%;
+        margin-bottom: -.1em;
+        left: 1em;
+    }
+
+    /* de grootte van de foto's van "recent bekeken" */
+    body main.detail section:nth-of-type(12) figure {
+        width: 28%;
+    }
+
+    /* de tweede figure/foto inline laten staan naast de andere foto */
+    body main.detail section:nth-of-type(12) figure:nth-of-type(2) {
+        display: inline;
+    }
+
+    /* de derde en vierde figure/foto weglaten, want deze komen bij minimaal 1024px */
+    body main.detail section:nth-of-type(12) figure:nth-of-type(3),
+    body main.detail section:nth-of-type(12) figure:nth-of-type(4) {
+        display: none;
+    }
+
+    /* de positionering van de footer */
+    body footer.fdetail {
+        top: 33em;
+    }
+
+    /* de foto's in de slider even groot maken */
+    body main.detail nav:nth-of-type(1) ul {
+        width: 100%;
+    }
+
+    /* de positionering van informatie over het product */
+    body main.detail section:nth-of-type(2),
+    body main.detail section:nth-of-type(3),
+    body main.detail section:nth-of-type(4),
+    body main.detail section:nth-of-type(5),
+    body main.detail section:nth-of-type(8),
+    body main.detail section:nth-of-type(9),
+    body main.detail section:nth-of-type(10),
+    body main.detail section:nth-of-type(11) {
+        margin-left: 2em;
+    }
+
+    /* de positionering van "meer maten" in het grijze vlak*/
+    body main.detail section:nth-of-type(8) {
+        max-width: 38%;
+    }
+
+    /* de opmaak van de buttons waardoor ze naast elkaar blijven staan */
+    body main.detail section:nth-of-type(5) {
+        position: relative;
+        justify-content: space-between;
+    }
+}
+
+/**/
+/* de styling van de pagina's wanneer de pagina's responsive worden vanaf minimaal 1024px */
+/**/
+
+@media (min-width:1024px) {
+    /**/
+    /* de indexpagina*/
+    /**/
+
+    /* het kleine Tommy Hilfiger logo weghalen */
+    #index nav:nth-of-type(1) ul:nth-of-type(2) li img:nth-of-type(1) {
+        display: none;
+    }
+
+    /* de volgorde van de foto's/content veranderen */
+    .index section:nth-of-type(2) ul li:nth-of-type(1) {
+        order: 2;
+        flex-grow: 2;
+        flex-basis: 50%;
+    }
+
+    .index section:nth-of-type(2) ul li:nth-of-type(2) {
+        order: 1;
+        flex-grow: 1;
+        flex-basis: 25%;
+    }
+
+    .index section:nth-of-type(2) ul li:nth-of-type(3) {
+        order: 3;
+        flex-grow: 1;
+        flex-basis: 25%;
+    }
+
+    .index section:nth-of-type(2) ul li:nth-of-type(4) {
+        order: 4;
+    }
+
+    /* alle sections hebben een padding van 2em waarbij er meer witruimte komt langs de inhoud van de pagina */
+    .index section {
+        padding: 0 2em;
+    }
+
+    /* behalve de eerste foto, deze moet de lengte over de hele pagina behouden */
+    .index section:nth-of-type(1) {
+        padding: 0;
+    }
+
+    /* het grote Tommy Hilfiger logo inline zetten */
+    #index nav:nth-of-type(1) ul:nth-of-type(2) li img:nth-of-type(2) {
+        display: inline;
+    }
+
+    /* de button van de eerste grote foto positioneren */
+    body main.index section:nth-of-type(1) a:nth-of-type(1) {
+        bottom: 15em;
+        left: 6em;
+    }
+
+    /* de opmaak van de titels groter maken */
+    body main.index section:nth-of-type(1) h3:nth-of-type(1),
+    body main.index section:nth-of-type(1) h3:nth-of-type(2),
+    body main.index section:nth-of-type(3) h3:nth-of-type(1),
+    body main.index section:nth-of-type(3) h3:nth-of-type(2) {
+        font-size: 2em;
+    }
+
+    /* de ondertekst van de eerste grote foto groter maken */
+    body main.index section:nth-of-type(1) p:nth-of-type(1) {
+        font-size: 1em;
+    }
+
+    /* de ondertekst van de "hilfiger collection" groter maken */
+    body main.index section:nth-of-type(3) p:nth-of-type(1) {
+        font-size: 1em;
+        bottom: 30em;
+    }
+
+    /* de positionering van de buttons van "hilfiger collection" */
+    body main.index section:nth-of-type(3) a:nth-of-type(1) {
+        bottom: 50em;
+    }
+
+    body main.index section:nth-of-type(3) a:nth-of-type(2) {
+        bottom: 45em;
+    }
+
+    /* de woorden van de navigatie groter maken */
+    header#index section:nth-of-type(1) ul figcaption {
+        font-size: 1em;
+    }
+
+    /* de tekst van "jouw tommy hilfiger stijl" positioneren */
+    body main section:nth-of-type(7) p:nth-of-type(1) {
+        top: 2em;
+        right: 35.5em;
+    }
+
+    /**/
+    /* de detailpagina*/
+    /**/
+
+    /* de derde en vierde foto inline zetten */
+    body main.detail section:nth-of-type(12) figure:nth-of-type(3),
+    body main.detail section:nth-of-type(12) figure:nth-of-type(4) {
+        display: inline;
+    }
+
+    /* de recent bekeken foto's naast elkaar positioneren */
+    body main.detail section:nth-of-type(12) figure {
+        width: 15%;
+    }
+}
