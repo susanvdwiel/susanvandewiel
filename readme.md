@@ -18,7 +18,8 @@
 Omdat ik geen tijd meer had om alles opnieuw te moeten coderen, leek het mij wel verstandig om te redeneren hoe het dan wél had gemoeten.
 
 **De indexpagina:**
-Met Martijn had de vier foto's, die de content van de indexpagina maken, gemaakt met display:flex, flex-basis en flex-grow. Dat had ik het beste ook direct kunnen toepassen bij het stuk van "jouw Tommy Hilfiger stijl". Dit heb ik later ergens tussendoor nog aangepast, maar toen moest ik nog behoorlijk wat aanpassingen doen om ze met drie foto's naast elkaar te krijgen.
+
+Samen met Martijn had ik de vier foto's, die de content van de indexpagina maken, gemaakt met display:flex, flex-basis en flex-grow. Dat had ik het beste ook direct kunnen toepassen bij het stuk van "jouw Tommy Hilfiger stijl". Dit heb ik later ergens tussendoor nog aangepast, maar toen moest ik nog behoorlijk wat aanpassingen doen om ze met drie foto's naast elkaar te krijgen.
 
 **De detailpagina:**
 De buttons, prijzen, kleuren, extra informatie etc over de trui had ik gemakkelijk met display:flex kunnen stijlen waardoor het ook makkelijk meeschaalt wanneer de pagina responsive wordt. In de HTML gaat het eigenlijk al fout dat ik de elementen niet goed in de sections heb gedaan. Ik heb bijvoorbeeld de "maattabel" en "toevoegen" (de groene button) samen in een section gedaan, terwijl dit een stuk makkelijker zou zijn wanneer dit niet het geval zou zijn en de maten buttons bij elkaar in een section zouden zitten.
@@ -31,7 +32,10 @@ De footer is op de detailpagina een ramp. Op een een of andere manier laat hij e
 Wanneer ik over de witruimte hover, kan hij niets vinden waar het aan zou kunnen liggen. Persoonlijk denk ik dat het aan de inhoud van de body ligt, ik denk van alle extra informatie van "specificaties", "sustainable style" en "verzendignen en retourneren" ligt. Hierbij heb ik veel moeten positioneren met position:absolute en position:relative.
 
 
+
+
 **In het algemeen:**
+
 Ik merkte dat ik de foto's in het begin veel met een width deed schalen, maar het is handiger om dat met % aan te geven zodat wanneer de pagina responsive wordt, hij direct meeschaalt. Dit heb ik later bij veel foto's moeten veranderen.
 
 Veel teksten had ik gemakkelijker kunnen positioneren door bijvoorbeeld: justify-content:center of align-items:center/flex-start/flex-end. Ik deed nu de teksten op position:absolute zetten en op die manier de teksten positioneren. Dit geldt ook voor de buttons.
