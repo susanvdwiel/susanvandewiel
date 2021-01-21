@@ -22,6 +22,7 @@ Omdat ik geen tijd meer had om alles opnieuw te moeten coderen, leek het mij wel
 Samen met Martijn had ik de vier foto's, die de content van de indexpagina maken, gemaakt met display:flex, flex-basis en flex-grow. Dat had ik het beste ook direct kunnen toepassen bij het stuk van "jouw Tommy Hilfiger stijl". Dit heb ik later ergens tussendoor nog aangepast, maar toen moest ik nog behoorlijk wat aanpassingen doen om ze met drie foto's naast elkaar te krijgen.
 
 **De detailpagina:**
+
 De buttons, prijzen, kleuren, extra informatie etc over de trui had ik gemakkelijk met display:flex kunnen stijlen waardoor het ook makkelijk meeschaalt wanneer de pagina responsive wordt. In de HTML gaat het eigenlijk al fout dat ik de elementen niet goed in de sections heb gedaan. Ik heb bijvoorbeeld de "maattabel" en "toevoegen" (de groene button) samen in een section gedaan, terwijl dit een stuk makkelijker zou zijn wanneer dit niet het geval zou zijn en de maten buttons bij elkaar in een section zouden zitten.
 
 Het harticoon naast de groene button "toevoegen" schuift ook telkens half over de button heen. Dit had ik ook beter in een andere section kunnen stoppen en hem dan op width:100vw zetten met een display:flex en hem dan justify-content: flex-end bijvoorbeeld te positioneren.
