@@ -167,11 +167,13 @@ body #index nav:nth-of-type(2) ul:nth-of-type(2) li:nth-of-type(3) img {
 }
 
 /* opmaak van de titel "ontdekken" */
-body #index nav:nth-of-type(2) ul:nth-of-type(3) h4 {
+body #index nav:nth-of-type(2) h3 {
+    position: relative;
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 600;
     color: rgb(29, 46, 93);
+    left: 0.8em;
 }
 
 /* de opmaak van "tommy jeans" en "sale" */
@@ -233,6 +235,11 @@ body #index ul:nth-of-type(2) li a {
 .active {
     left: 0 !important;
     transition: .5s;
+}
+
+/* alle linkjes de donkerblauwe kleur */
+body #navigatie a {
+    color: rgb(29, 46, 93);
 }
 
 /**/
@@ -710,6 +717,7 @@ body main section:nth-of-type(8) p {
 /* de woorden met een linkje, die in de teksten staan, een streepje meegeven */
 body main section:nth-of-type(8) a {
     text-decoration: underline;
+    color: rgb(143, 143, 143);
 }
 
 
