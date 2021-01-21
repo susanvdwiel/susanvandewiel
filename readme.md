@@ -8,8 +8,33 @@
 1. https://www.youtube.com/watch?v=YszONjKpgg4
 2. https://codepen.io/shooft/pen/BaKGKwm
 3. https://codepen.io/shooft/pen/vYGQNZj
-4. Martijn van der Lans > 201
+4. Martijn van der Lans > klas 201
 5. Iris van Ollefen > studentassistent
+
+
+
+
+## Hoe had het dan wel gemoeten?
+Omdat ik geen tijd meer had om alles opnieuw te moeten coderen, leek het mij wel verstandig om te redeneren hoe het dan wél had gemoeten.
+
+**De indexpagina:**
+Met Martijn had de vier foto's, die de content van de indexpagina maken, gemaakt met display:flex, flex-basis en flex-grow. Dat had ik het beste ook direct kunnen toepassen bij het stuk van "jouw Tommy Hilfiger stijl". Dit heb ik later ergens tussendoor nog aangepast, maar toen moest ik nog behoorlijk wat aanpassingen doen om ze met drie foto's naast elkaar te krijgen.
+
+**De detailpagina:**
+De buttons, prijzen, kleuren, extra informatie etc over de trui had ik gemakkelijk met display:flex kunnen stijlen waardoor het ook makkelijk meeschaalt wanneer de pagina responsive wordt. In de HTML gaat het eigenlijk al fout dat ik de elementen niet goed in de sections heb gedaan. Ik heb bijvoorbeeld de "maattabel" en "toevoegen" (de groene button) samen in een section gedaan, terwijl dit een stuk makkelijker zou zijn wanneer dit niet het geval zou zijn en de maten buttons bij elkaar in een section zouden zitten.
+
+Het harticoon naast de groene button "toevoegen" schuift ook telkens half over de button heen. Dit had ik ook beter in een andere section kunnen stoppen en hem dan op width:100vw zetten met een display:flex en hem dan justify-content: flex-end bijvoorbeeld te positioneren.
+
+Alle extra informatie, zoals "specificaties", "sustainable style" en "verzendignen en retourneren" staan in een aparte section. Ik denk dat ik dit beter in één section had kunnen zetten zodat het makkelijker te positioneren is. Ik moest nu per section de tekst positioneren. Dit had beter gekund in bijvoorbeeld een ul met li'tjes en die stijlen met een margin aan de linkerkant zodat die een stukje witruimte geeft.
+
+De footer is op de detailpagina een ramp. Op een een of andere manier laat hij een heel groot stuk met witruimte zien. De footer gaat over de content heen wanneer je de pagina resposive maakt. Ik heb de footer daarom wat meer naar beneden geplaatst zodat hij bij iPad en desktop formaat oké staat, maar bij mobielformaat is het echt rampzalig.
+Wanneer ik over de witruimte hover, kan hij niets vinden waar het aan zou kunnen liggen. Persoonlijk denk ik dat het aan de inhoud van de body ligt, ik denk van alle extra informatie van "specificaties", "sustainable style" en "verzendignen en retourneren" ligt. Hierbij heb ik veel moeten positioneren met position:absolute en position:relative.
+
+
+**In het algemeen:**
+Ik merkte dat ik de foto's in het begin veel met een width deed schalen, maar het is handiger om dat met % aan te geven zodat wanneer de pagina responsive wordt, hij direct meeschaalt. Dit heb ik later bij veel foto's moeten veranderen.
+
+Veel teksten had ik gemakkelijker kunnen positioneren door bijvoorbeeld: justify-content:center of align-items:center/flex-start/flex-end. Ik deed nu de teksten op position:absolute zetten en op die manier de teksten positioneren. Dit geldt ook voor de buttons.
 
 
 
@@ -69,10 +94,7 @@ Ik heb er daarom voor gekozen om de footer als een dropdown te houden. Ook zag i
 
 Hij liet de foto's dan niet meer zien van de pagina, dus dat was ook erg vreemd. Daarom heb ik van de iPad pagina mijn eigen ingeven gemaakt wat toch binnen de stijl van Tommy Hilfiger blijft.
 
-Ik besloot Martijn een appje te doen met de vraag of hij mij kon helpen bij het responsive maken van de website. Ik had namelijk een opstapje nodig bij het coderen om de site responsive te krijgen. Samen hebben we gekeken naar de index- en detailpagina. Hij zei dat het eigenlijk niet handig is geweest dat mijn hele website bestaat uit position:absolute en position:relative, omdat niets dan op de goede manier meeschaalt. Het was te kortdag om de code opnieuw te schrijven en dit dan wel op de goede manier te doen, dus meer gebruik maken van:
-- display:flex
-- justify-content:center
--
+Ik besloot Martijn een appje te doen met de vraag of hij mij kon helpen bij het responsive maken van de website. Ik had namelijk een opstapje nodig bij het coderen om de site responsive te krijgen. Samen hebben we gekeken naar de index- en detailpagina. Hij zei dat het eigenlijk niet handig is geweest dat mijn hele website bestaat uit position:absolute en position:relative, omdat niets dan op de goede manier meeschaalt. Het was te kortdag om de code opnieuw te schrijven en dit dan wel op de goede manier te doen.
 
 Met zijn hulp lukte het toch om de pagina's goed responsive te maken, maar een paar kleine dingetjes konden we samen niet oplossen.
 
