@@ -1,7 +1,6 @@
 # Procesverslag
 **Auteur:** Susan van de Wiel
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
 
 
@@ -18,31 +17,38 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Het eindresultaat
 **De indexpagina:**
 Mobiel:
-<img src="images/eindresultaat_mobiel.png">
+
+<img src="image/eindresultaat_mobiel.png" width="375px" alt="foto_eigen_site_indexpagina_mobielformaat">
 
 iPad:
-<img src="images/eindresultaat_index_ipad.png">
+
+<img src="image/eindresultaat_index_ipad.png" width="375px" alt="foto_eigen_site_indexpagina_ipadformaat">
 
 
 Desktop:
-<img src="images/eindresultaat_index_desktop.png">
+
+<img src="image/eindresultaat_index_desktop.png" width="375px" alt="foto_eigen_site_indexpagina_desktopformaat">
 
 
 Hamburgermenu:
-<img src="images/eindresultaat_index_hamburger.png">
+
+<img src="image/eindresultaat_index_hamburger.png" width="375px" alt="foto_eigen_site_indexpagina_hamburgermenu">
 
 
 
 
 **De detailpagina:**
 Mobiel:
-<img src="images/eindresultaat_detail_mobiel.png">
+
+<img src="image/eindresultaat_detail_mobiel.png" width="375px" alt="foto_eigen_site_detailpagina_mobielformaat">
 
 iPad:
-<img src="images/eindresultaat_detail_ipad.png">
+
+<img src="image/eindresultaat_detail_ipad.png" width="375px" alt="foto_eigen_site_detailpagina_ipadformaat">
 
 Desktop:
-<img src="images/eindresultaat_detail_desktop.png">
+
+<img src="image/eindresultaat_detail_desktop.png" width="375px" alt="foto_eigen_site_detailpagina_desktopformaat">
 
 
 
@@ -55,11 +61,11 @@ Toch ben ik naar het beoordelingsgesprek gegaan om nog wat feedback te krijgen v
 
 Na het gesprek met Janno heb ik een beginnetje gemaakt met het responsive maken van de index pagina. Ik bekeek hoe de site van Tommy Hilfiger eruit ziet wanneer je hem op iPad/desktop bekeek. Ik zag dat de footer er ontzettend rommelig uitzag, namelijk zo:
 
-<img src="images/footer_index.png">
+<img src="image/footer_index.png" width="375px" alt="foto_site_Tommy_Hilfiger_content">
 
 Ik heb er daarom voor gekozen om de footer als een dropdown te houden. Ook zag ik dat de content van de index pagina soms niet meeschaalde, zie hieronder:
 
-<img src="images/content_index.png">
+<img src="image/content_index.png" width="375px" alt="foto_site_Tommy_Hilfiger_footer">
 
 Hij liet de foto's dan niet meer zien van de pagina, dus dat was ook erg vreemd. Daarom heb ik van de iPad pagina mijn eigen ingeven gemaakt wat toch binnen de stijl van Tommy Hilfiger blijft.
 
@@ -122,7 +128,7 @@ Tijdens de meeting kregen we antwoord op onze vragen en gingen we kijken naar on
 ## Huiswerk week 4
 Ik ben bezig geweest met het coderen van de detail pagina. Ik ben nu hier:
 
-<img src="images/detail_pagina2.png">
+<img src="image/detail_pagina2.png" width="375px" alt="foto_eigen_site_detailpagina">
 
 Ik merk dat ik het nog steeds lastig vind met display:flex, flex-wrap:wrap en flex-basis:100% (bijvoorbeeld). Vooral omdat deze pagina veel buttons bevat die naast elkaar moeten komen te staan.
 
@@ -133,7 +139,7 @@ Ik merk dat ik het nog steeds lastig vind met display:flex, flex-wrap:wrap en fl
 
 Ik vond het nog erg lastig om soms display:flex te gebruiken, met bijvoorbeeld flex-wrap:wrap of flex-basis:100%. Ik heb het meeste moeite gehad met de header, daar zit de meeste tijd in omdat ik het lastig vond om alles goed te positioneren. Na hulp van Martijn is het mij toch gelukt.
 
-<img src="images/voortgang_1.png">
+<img src="image/voortgang_1.png" width="375px" alt="foto_eigen_site_indexpagina">
 
 Ik ben nu nog bezig met de main page. Door een drukke week met veel ander huiswerk vond ik het lastig te combineren (ook omdat ik coderen lastig vind, komt er gauw veel tijd bij kijken :-)). Ik vind dat ik tot nu toe al erg ver ben gekomen voor mijn doen.
 
@@ -175,7 +181,7 @@ Met deze antwoorden ben ik verder gaan werken aan de website.
 
 **Werkgroep 2, week 1:** In werkgroep 1 kreeg ik feedback op mijn breakdownschets. Zo kreeg ik feedback om: meer iconen te gebruiken in plaats van img. Ik was vergeten om de header, main en footer aan te geven en er werd ook verteld dat het handig was om figure en figcaption te gebruiken. Dit heb ik aangepast in mijn breakdownschets, zodat dit mij makkelijker kan helpen tijdens het coderen.
 
-<img src="images/breakdown_schets_2.png" width="375px" alt="breakdown_schets_na_feedback">
+<img src="image/breakdown_schets_2.png" width="375px" alt="breakdown_schets_na_feedback">
 
 
 
@@ -184,7 +190,7 @@ Met deze antwoorden ben ik verder gaan werken aan de website.
 
 **Werkgroep 1, week 1:** In week 1 ben ik begonnen met een breakdownschets te maken van de main page van de site van Tommy Hilfiger. Hierin gaf ik aan welke elementen de main pagina bevat. Dit maakt het later makkelijker om te coderen, een soort geheugensteuntje.
 
-<img src="images/breakdown_schets.png" width="375px" alt="breakdown_schets">
+<img src="image/breakdown_schets.png" width="375px" alt="breakdown_schets">
 
 
 
@@ -202,11 +208,11 @@ Met deze antwoorden ben ik verder gaan werken aan de website.
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/main1.PNG" width="375px" alt="Hoofdpagina">
+<img src="image/main1.PNG" width="375px" alt="foto_Tommy_Hilfiger_site_hoofdpagina">
 
-<img src="images/main2.PNG" width="375px" alt="Hoofdpagina">
+<img src="image/main2.PNG" width="375px" alt="foto_Tommy_Hilfiger_site_hoofdpagina">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/detail_pagina.png" width="375px" alt="detailpagina">
+<img src="image/detail_pagina.png" width="375px" alt="foto_Tommy_Hilfiger_site_detailpagina">
 
